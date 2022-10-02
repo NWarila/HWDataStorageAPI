@@ -1,0 +1,34 @@
+{
+    "date": 1664640885.840726,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": [
+                    true,
+                    true,
+                    true,
+                    true
+                ]
+            }
+        },
+        {
+            "ident": "group_1_body",
+            "result": {
+                "response": {
+                    "chestReward": [
+                        {
+                            "consumable": {
+                                "29": 50
+                            }
+                        }
+                    ],
+                    "xp": 30221,
+                    "newLevel": 35,
+                    "levelUpReward": [],
+                    "starmoneySpent": 2865180
+                }
+            }
+        }
+    ]
+}

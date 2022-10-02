@@ -1,0 +1,148 @@
+{
+    "date": 1664635611.732329,
+    "results": [
+        {
+            "ident": "body",
+            "result": {
+                "response": {
+                    "replay": {
+                        "userId": "12491146",
+                        "typeId": "12491146",
+                        "attackers": {
+                            "4031": {
+                                "id": 4031,
+                                "xp": 686760,
+                                "level": 120,
+                                "star": 3,
+                                "skills": {
+                                    "4030": 120
+                                },
+                                "power": 83367,
+                                "skins": {
+                                    "10017": 60
+                                },
+                                "currentSkin": 0,
+                                "artifacts": [
+                                    {
+                                        "level": 120,
+                                        "star": 1
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 3
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 3
+                                    }
+                                ],
+                                "scale": 0.8,
+                                "type": "titan",
+                                "perks": null,
+                                "anticrit": 1,
+                                "antidodge": 1,
+                                "hp": 3182803.79,
+                                "physicalAttack": 466517.75,
+                                "elementAttack": 140855,
+                                "elementArmor": 80983.5,
+                                "elementSpiritPower": 2280,
+                                "element": "dark",
+                                "elementSpiritLevel": 1,
+                                "elementSpiritStar": 1,
+                                "skin": 0
+                            }
+                        },
+                        "defenders": [
+                            [
+                                {
+                                    "id": 4031,
+                                    "xp": 686760,
+                                    "level": 120,
+                                    "star": 3,
+                                    "skills": {
+                                        "4030": 120
+                                    },
+                                    "power": 83367,
+                                    "skins": {
+                                        "10017": 60
+                                    },
+                                    "currentSkin": 0,
+                                    "artifacts": [
+                                        {
+                                            "level": 120,
+                                            "star": 1
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 3
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 3
+                                        }
+                                    ],
+                                    "scale": 0.8,
+                                    "type": "titan",
+                                    "perks": null,
+                                    "anticrit": 1,
+                                    "antidodge": 1,
+                                    "hp": 3182803.79,
+                                    "physicalAttack": 466517.75,
+                                    "elementAttack": 140855,
+                                    "elementArmor": 80983.5,
+                                    "elementSpiritPower": 2280,
+                                    "element": "dark",
+                                    "elementSpiritLevel": 1,
+                                    "elementSpiritStar": 1,
+                                    "skin": 0
+                                }
+                            ]
+                        ],
+                        "effects": {
+                            "battleConfig": "titan_pvp_manual"
+                        },
+                        "reward": [],
+                        "startTime": "1664635601",
+                        "seed": "2624908486",
+                        "type": "challenge",
+                        "id": "1664635611698464713",
+                        "progress": [
+                            {
+                                "v": 213,
+                                "b": 0,
+                                "seed": -1670058810,
+                                "attackers": {
+                                    "input": [
+                                        "auto",
+                                        0,
+                                        0,
+                                        "auto",
+                                        3,
+                                        0.20599985122680664
+                                    ],
+                                    "heroes": []
+                                },
+                                "defenders": {
+                                    "input": [],
+                                    "heroes": [
+                                        {
+                                            "hp": 262357,
+                                            "energy": 547,
+                                            "isDead": false
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "endTime": 1664635611,
+                        "result": {
+                            "win": false,
+                            "stars": 0,
+                            "clientVersion": 213
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,304 @@
+{
+    "date": 1664641147.234743,
+    "results": [
+        {
+            "ident": "body",
+            "result": {
+                "response": {
+                    "reward": {
+                        "fragmentScroll": {
+                            "248": 1
+                        },
+                        "gold": 3031
+                    }
+                },
+                "quests": [
+                    {
+                        "id": 249053,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "1"
+                            },
+                            "fragmentTitan": {
+                                "4031": "1"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249054,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "1"
+                            },
+                            "fragmentTitan": {
+                                "4031": "2"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249055,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "1"
+                            },
+                            "fragmentTitan": {
+                                "4031": "3"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249056,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "2"
+                            },
+                            "fragmentTitan": {
+                                "4031": "4"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249057,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "2"
+                            },
+                            "fragmentTitan": {
+                                "4031": "5"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249058,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "3"
+                            },
+                            "fragmentTitan": {
+                                "4031": "5"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249059,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "3"
+                            },
+                            "fragmentTitan": {
+                                "4031": "6"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249060,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "4"
+                            },
+                            "fragmentTitan": {
+                                "4031": "6"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249061,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "4"
+                            },
+                            "fragmentTitan": {
+                                "4031": "7"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249062,
+                        "state": 3,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "5"
+                            },
+                            "fragmentTitan": {
+                                "4031": "10"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249063,
+                        "state": 1,
+                        "progress": 11960,
+                        "reward": {
+                            "consumable": {
+                                "278": "10"
+                            },
+                            "fragmentTitan": {
+                                "4031": "20"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 10047,
+                        "state": 1,
+                        "progress": 20,
+                        "reward": {
+                            "consumable": {
+                                "1": 3
+                            },
+                            "gold": 1500
+                        },
+                        "createTime": 1664634705
+                    },
+                    {
+                        "id": 10048,
+                        "state": 1,
+                        "progress": 20,
+                        "reward": {
+                            "consumable": {
+                                "1": 10
+                            },
+                            "gold": 3000
+                        },
+                        "createTime": 1664634705
+                    },
+                    {
+                        "id": 10049,
+                        "state": 1,
+                        "progress": 20,
+                        "reward": {
+                            "consumable": {
+                                "2": 15
+                            },
+                            "gold": 5000
+                        },
+                        "createTime": 1664634705
+                    },
+                    {
+                        "id": 10050,
+                        "state": 1,
+                        "progress": 20,
+                        "reward": {
+                            "consumable": {
+                                "3": 10
+                            },
+                            "gold": 10000
+                        },
+                        "createTime": 1664634705
+                    },
+                    {
+                        "id": 10002,
+                        "state": 1,
+                        "progress": 2,
+                        "reward": {
+                            "consumable": {
+                                "56": 1
+                            },
+                            "gold": 7500
+                        },
+                        "createTime": 1664634705
+                    }
+                ],
+                "questEvents": [
+                    {
+                        "id": 9,
+                        "sortOrder": 11,
+                        "name_localeKey": "LIB_SPECIAL_QUEST_EVENT_NAME_9",
+                        "desc_localeKey": "LIB_SPECIAL_QUEST_EVENT_DESC_9",
+                        "notification_localeKey": "",
+                        "localeKey": "LIB_SPECIAL_QUEST_EVENT_NAME_9",
+                        "eventLoopData": {
+                            "group": 1,
+                            "groupOrder": 2,
+                            "duration": 3
+                        },
+                        "hideCompleted": null,
+                        "icon": "event_icon_002",
+                        "background": "event_background_002.jpg",
+                        "questChains": null,
+                        "eventReward": null,
+                        "startTime": 1664416800,
+                        "endTime": 1664676000
+                    },
+                    {
+                        "id": 13,
+                        "sortOrder": 9,
+                        "name_localeKey": "LIB_SPECIAL_QUEST_EVENT_NAME_13",
+                        "desc_localeKey": "LIB_SPECIAL_QUEST_EVENT_DESC_13",
+                        "notification_localeKey": "",
+                        "localeKey": "LIB_SPECIAL_QUEST_EVENT_NAME_13",
+                        "eventLoopData": {
+                            "group": 2,
+                            "groupOrder": 1,
+                            "duration": 7
+                        },
+                        "hideCompleted": null,
+                        "icon": "event_icon_001",
+                        "background": "event_background_001.jpg",
+                        "questChains": null,
+                        "eventReward": null,
+                        "startTime": 1664503200,
+                        "endTime": 1665108000
+                    },
+                    {
+                        "id": 367,
+                        "sortOrder": 2,
+                        "name_localeKey": "LIB_SPECIAL_QUEST_EVENT_NAME_KEROS",
+                        "desc_localeKey": "LIB_SPECIAL_QUEST_EVENT_DESC_KEROS",
+                        "notification_localeKey": "LIB_SPECIAL_QUEST_EVENT_NOTIFICATION_KEROS",
+                        "localeKey": "LIB_SPECIAL_QUEST_EVENT_NAME_KEROS",
+                        "eventLoopData": null,
+                        "hideCompleted": null,
+                        "icon": "event_button_titans_dark",
+                        "background": "event_background_titans_dark.jpg",
+                        "questChains": [
+                            2199,
+                            2200,
+                            2201,
+                            2202,
+                            2203,
+                            2204,
+                            2190,
+                            2191
+                        ],
+                        "eventReward": null,
+                        "startTime": 1664514000,
+                        "endTime": 1664773200
+                    }
+                ],
+                "endSpecialOffers": [
+                    8
+                ]
+            }
+        }
+    ]
+}

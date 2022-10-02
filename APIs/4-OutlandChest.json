@@ -1,0 +1,215 @@
+{
+    "date": 1664640934.08133,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ]
+            }
+        },
+        {
+            "ident": "group_1_body",
+            "result": {
+                "response": {
+                    "rewards": {
+                        "free": [
+                            {
+                                "coin": {
+                                    "8": 50
+                                }
+                            }
+                        ],
+                        "payed": []
+                    },
+                    "boss": {
+                        "id": 12,
+                        "bossLevel": 33,
+                        "chestNum": 2,
+                        "chestId": 2,
+                        "lastChestReward": {
+                            "coin": {
+                                "8": 50
+                            }
+                        },
+                        "chests": [
+                            {
+                                "coin": {
+                                    "4": 100
+                                }
+                            },
+                            {
+                                "coin": {
+                                    "8": 50
+                                }
+                            }
+                        ],
+                        "cost": {
+                            "starmoney": "90"
+                        },
+                        "mayRaid": false
+                    }
+                },
+                "quests": [
+                    {
+                        "id": 249064,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "1"
+                            },
+                            "fragmentTitan": {
+                                "4031": "1"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249065,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "1"
+                            },
+                            "fragmentTitan": {
+                                "4031": "2"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249066,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "2"
+                            },
+                            "fragmentTitan": {
+                                "4031": "3"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249067,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "2"
+                            },
+                            "fragmentTitan": {
+                                "4031": "3"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249068,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "2"
+                            },
+                            "fragmentTitan": {
+                                "4031": "4"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249069,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "3"
+                            },
+                            "fragmentTitan": {
+                                "4031": "4"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249070,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "3"
+                            },
+                            "fragmentTitan": {
+                                "4031": "5"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249071,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "4"
+                            },
+                            "fragmentTitan": {
+                                "4031": "6"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249072,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "5"
+                            },
+                            "fragmentTitan": {
+                                "4031": "10"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 249073,
+                        "state": 3,
+                        "progress": 250,
+                        "reward": {
+                            "consumable": {
+                                "278": "10"
+                            },
+                            "fragmentTitan": {
+                                "4031": "20"
+                            }
+                        },
+                        "createTime": 1664537305
+                    },
+                    {
+                        "id": 10020,
+                        "state": 1,
+                        "progress": 1,
+                        "reward": {
+                            "consumable": {
+                                "56": 1
+                            },
+                            "gold": 5000
+                        },
+                        "createTime": 1664634705
+                    }
+                ]
+            }
+        }
+    ]
+}

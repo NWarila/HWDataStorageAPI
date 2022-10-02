@@ -1,0 +1,43 @@
+{
+    "date": 1664640860.020558,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": [
+                    true,
+                    true
+                ]
+            }
+        },
+        {
+            "ident": "group_1_body",
+            "result": {
+                "response": {
+                    "num": 2,
+                    "opened": 1,
+                    "reward": {
+                        "fragmentGear": {
+                            "175": "4"
+                        }
+                    },
+                    "critMultiplier": 1
+                },
+                "quests": [
+                    {
+                        "id": 10019,
+                        "state": 2,
+                        "progress": 1,
+                        "reward": {
+                            "consumable": {
+                                "56": 1
+                            },
+                            "gold": 9200
+                        },
+                        "createTime": 1664634705
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "date": 1664640745.560698,
+    "results": [
+        {
+            "ident": "body",
+            "result": {
+                "response": {
+                    "rewards": [
+                        {
+                            "fragmentPet": {
+                                "6005": 10
+                            },
+                            "petCard": {
+                                "6005": 10
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6004": 10
+                            },
+                            "petCard": {
+                                "6004": 10
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6001": 1
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6007": 3
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6006": 1
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6005": 1
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6001": 1
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6002": 1
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6007": 1
+                            }
+                        },
+                        {
+                            "fragmentPet": {
+                                "6002": 3
+                            }
+                        }
+                    ],
+                    "superPrize": {
+                        "fragments": null,
+                        "petId": 0
+                    },
+                    "dailyPetId": 0,
+                    "starmoneySpent": 1475000
+                },
+                "quests": [
+                    {
+                        "id": 10044,
+                        "state": 2,
+                        "progress": 10,
+                        "reward": {
+                            "consumable": {
+                                "85": 100
+                            }
+                        },
+                        "createTime": 1664634705
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "date": 1664641233.969837,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": [
+                    true,
+                    true,
+                    true,
+                    true
+                ]
+            }
+        },
+        {
+            "ident": "group_1_body",
+            "result": {
+                "response": {
+                    "consumable": {
+                        "85": 953
+                    }
+                },
+                "quests": [
+                    {
+                        "id": 10046,
+                        "state": 1,
+                        "progress": 1,
+                        "reward": {
+                            "consumable": {
+                                "86": 25
+                            }
+                        },
+                        "createTime": 1664641220
+                    }
+                ]
+            }
+        }
+    ]
+}

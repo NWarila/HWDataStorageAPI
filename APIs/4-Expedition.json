@@ -1,0 +1,47 @@
+{
+    "date": 1664641002.305244,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": [
+                    true,
+                    true
+                ]
+            }
+        },
+        {
+            "ident": "group_1_body",
+            "result": {
+                "response": {
+                    "reward": {
+                        "consumable": {
+                            "44": 2,
+                            "38": 7,
+                            "42": 5
+                        }
+                    },
+                    "newExpedition": {
+                        "id": 745,
+                        "slotId": 1,
+                        "status": 1,
+                        "heroes": [],
+                        "endTime": 0,
+                        "duration": 600,
+                        "day": "20221001",
+                        "reward": {
+                            "consumable": {
+                                "41": 10,
+                                "30": 18
+                            }
+                        },
+                        "power": 693300,
+                        "rarity": 1,
+                        "storyId": 1,
+                        "attemptsLeft": 1
+                    }
+                }
+            }
+        }
+    ]
+}
