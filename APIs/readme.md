@@ -8,17 +8,17 @@ This projects goal is to build a database structure to support API responses tha
 
 
 
- - = Section 1 (Files prefixed with '1-') = -
+- = Section 1 (Files prefixed with '1-') = -
  
 These JSON files represent server responses sent from the client to the web server. We need to extract the battles/replay sections of these files and store them in the replay section of the database. Everything else in this file is not needed.
 
 
- - = Section 2 (Files prefixed with '2-') = -
+- = Section 2 (Files prefixed with '2-') = -
  
 These files need to be able to be recreated in its entirety. Player and replay information needs to be extracted and the JSON file will need to be able to be exported if needed.
 
 
- - = Section 4 (Files prefixed with '4-') = -
+- = Section 4 (Files prefixed with '4-') = -
  
 These files are lootbox type responses that contain the rewards gained from various sources.
 
@@ -26,7 +26,7 @@ These files are lootbox type responses that contain the rewards gained from vari
  
 1. JSON nodes that essentially show result, response, true, true,  true, etc are not needed. They can be ignored.
 
- - = File Instruction Breakdown = -
+- = File Instruction Breakdown = -
  
 1-Arena: The only thing needed from this file is Results.result.response.battles. There should only ever be 1 battle from this specific JSON file and each of them should be placed in the replay tables. Player information should be read and updated if needed from this file.
 
