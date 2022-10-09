@@ -1,0 +1,86 @@
+<# Important Notes (Category: Lootboxes)
+    This API is called when a player opens the game using a GiftID link. These
+are generic links posted on either the official Facebook, YouTube, and Discord
+pages. This API should be logged in two different places.
+
+ 1. We should record all unique giftIds that are loaded by any player. This will
+    be a master list of all gifts available. This table will be used to allow the
+    extension to query all available gifts and load them automatically for all
+    players using the extension without having to click all of the links. This
+    table should also record the
+
+ 2. All gifts opened by a player should be recorded so the extension can query
+    all available gifts and what gifts have been loaded by the player and
+    automatically open any available gifts.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    Eventually we will want to build a way to view how often we get various
+types of rewards. Certain rewards such as pet portals are very lucrative and
+are manually tracked by many players.
+
+Note for extension developer
+
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665290293.575326,
+    'id':'freebieCheck',
+    'Args': '9df844d4f08190ae9e2512996be3b7d5',
+    'Request': '{"calls":[{"name": "freebieCheck","args": {"giftId": "9df844d4f08190ae9e2512996be3b7d5"},"ident": "freebieCheck"}]}',
+    'Body': {
+        "id": 1362321249,
+        "type": "freebie",
+        "senderId": -306,
+        "message": "",
+        "params": {
+            "channel": "group",
+            "imgName": ""
+        },
+        "reward": {
+            "consumable": {
+                "55": 5,
+                "148": 3
+            }
+        },
+        "read": 0,
+        "ctime": 1665290292,
+        "availableUntil": 0
+    }
+}
+
+# Full API response
+{
+    "date": 1665290293.575326,
+    "results": [
+        {
+            "ident": "freebieCheck",
+            "result": {
+                "response": {
+                    "id": 1362321249,
+                    "type": "freebie",
+                    "senderId": -306,
+                    "message": "",
+                    "params": {
+                        "channel": "group",
+                        "imgName": ""
+                    },
+                    "reward": {
+                        "consumable": {
+                            "55": 5,
+                            "148": 3
+                        }
+                    },
+                    "read": 0,
+                    "ctime": 1665290292,
+                    "availableUntil": 0
+                }
+            }
+        }
+    ]
+}

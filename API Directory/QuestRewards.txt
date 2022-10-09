@@ -1,0 +1,75 @@
+<# Important Notes (Category: Lootbox)
+    This information should be stored in the Rewards table. The information should be associatable with the user
+and how the reward was acquired. In this case below, it was a quest reward ("name":"questFarm") and it came from
+the questID 11001. We will want to be able to query the information in the following ways:
+    By user: Who got the quest rewards
+    By Source: In this case quest 11001
+    By date: The timestamp.
+
+Long Term goals (Out of Scope of this project)
+    Eventually in addition to querying the information in our extension, we will want to create a webpage where
+users will be presented with a drop down list of the different types of loot sources (quests, lootboxes, etc)
+and view various graphics and statistics about that loot source.
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665281991.16099,
+    'id':'QuestRewards',
+    'Args': '"questId": 11001',
+    'Request': '{"calls": [{"name": "questFarm","args": {},"ident": "group_0_body"}]}',
+    'Body': {
+        "response": {
+            "ascensionGear": {
+                "2": 3,
+                "3": 1,
+                "5": 1,
+                "6": 2,
+                "7": 1,
+                "9": 1
+            }
+        }
+    }
+}
+
+# Full API Request
+{"calls": [{"name": "questFarm","args": {"questId": 11001},"ident": "group_0_body"}]}
+
+# Full API response
+{
+    "date": 1665281991.16099,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": {
+                    "ascensionGear": {
+                        "2": 3,
+                        "3": 1,
+                        "5": 1,
+                        "6": 2,
+                        "7": 1,
+                        "9": 1
+                    }
+                },
+                "newQuests": [
+                    {
+                        "id": 11002,
+                        "state": 2,
+                        "progress": 9,
+                        "reward": {
+                            "consumable": {
+                                "169": "5",
+                                "170": "4",
+                                "171": "3"
+                            }
+                        },
+                        "createTime": 1664828822
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+<# Important Notes (Category: Game Loading)
+    This API is loaded when a player who has the extension installed loads the
+    game. It's in game purpose is to provide the game client with the users totem
+    information and we are using it for the same purpose. When the server receives
+    this API it should be used to update the players (PlayerID) character stats.
+
+Long Term goals (Out of Scope of this project)
+    Eventually this information will be used to present a per-player view of a
+    players heroes, titans, totems, and pets. It will essentially be a read-only
+    version of this website. URL: https://hero-wars.ji7.ru/heroes
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665287674.4168,
+    'id':'titanSpiritGetAll',
+    'Args': '',
+    'Request': '{"calls": [{"name": "titanSpiritGetAll","args": {},"ident": "titanSpiritGetAll"}]}',
+    'Body': {
+        "water": {
+            "id": 4001,
+            "level": 120,
+            "star": 6
+        },
+        "fire": {
+            "id": 4002,
+            "level": 120,
+            "star": 6
+        },
+        "earth": {
+            "id": 4003,
+            "level": 120,
+            "star": 6
+        },
+        "dark": {
+            "id": 4004,
+            "level": 1,
+            "star": 1
+        },
+        "light": {
+            "id": 4005,
+            "level": 1,
+            "star": 0
+        }
+    }
+}
+
+# Full API response
+{
+    "date": 1665287674.4168,
+    "results": [
+        {
+            "ident": "titanSpiritGetAll",
+            "result": {
+                "response": {
+                    "water": {
+                        "id": 4001,
+                        "level": 120,
+                        "star": 6
+                    },
+                    "fire": {
+                        "id": 4002,
+                        "level": 120,
+                        "star": 6
+                    },
+                    "earth": {
+                        "id": 4003,
+                        "level": 120,
+                        "star": 6
+                    },
+                    "dark": {
+                        "id": 4004,
+                        "level": 1,
+                        "star": 1
+                    },
+                    "light": {
+                        "id": 4005,
+                        "level": 1,
+                        "star": 0
+                    }
+                }
+            }
+        }
+    ]
+}

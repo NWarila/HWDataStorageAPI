@@ -1,0 +1,1184 @@
+<# Important Notes (Category: Replays)                                                                           |
+    This API is called when a player loads a replay from the Clash of Wars log. This API stores all the
+information to have the game client accurately load a battle replay. Collecting this API should do two things:
+
+ 1. The replay in its entirety should be stored in the database so that the exact relay can be loaded or exported
+    as needed.
+
+ 2. The hero, titan, totem, and pet information should be updated as neededfor the relevant players as needed
+ in the players tables. The server should calculate the pet stats that are added to the heroes and remove them
+ before storing the information in the player table.
+
+ !The formula to calculate the pet infomration needs to be provided to python developer.
+
+This API is Exportable: Yes
+
+Long Term goals (Out of Scope of this project)
+    Eventually we will want to be able to use the replays to track a players
+attack win and loss rate. It should also allow us to monitor the CoW
+defensive assignments of various guilds depending, but that is low priority.
+
+Note for extension developer
+ 1. None
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665294600.814394,
+    'id':'battleGetReplay',
+    'Args': '',
+    'Request': '{"calls": [{"name": "battleGetReplay","args": {"id": "1664808032590200158"},"ident": "group_0_body"}]}',
+    'Body': {
+        "replay": {
+            "userId": "10373342",
+            "typeId": "12018590",
+            "attackers": {
+                "4021": {
+                    "id": 4021,
+                    "xp": 686760,
+                    "level": 120,
+                    "star": 6,
+                    "skills": {
+                        "4021": 120
+                    },
+                    "power": 170278,
+                    "skins": {
+                        "10010": 60
+                    },
+                    "currentSkin": 0,
+                    "artifacts": [
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        }
+                    ],
+                    "scale": 0.8,
+                    "type": "titan",
+                    "perks": null,
+                    "anticrit": 1,
+                    "antidodge": 1,
+                    "hp": 11444600.73,
+                    "physicalAttack": 801066.1799999999,
+                    "elementAttack": 422565,
+                    "elementArmor": 89982,
+                    "elementSpiritPower": 6750000,
+                    "element": "earth",
+                    "elementSpiritLevel": 120,
+                    "elementSpiritStar": 6,
+                    "skin": 0
+                },
+                "4023": {
+                    "id": 4023,
+                    "xp": 686760,
+                    "level": 120,
+                    "star": 6,
+                    "skills": {
+                        "4025": 120,
+                        "4026": 120
+                    },
+                    "power": 170336,
+                    "skins": {
+                        "10012": 60
+                    },
+                    "currentSkin": 0,
+                    "artifacts": [
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        }
+                    ],
+                    "scale": 0.8,
+                    "type": "titan",
+                    "perks": null,
+                    "anticrit": 1,
+                    "antidodge": 1,
+                    "hp": 13620313.35,
+                    "physicalAttack": 638741.97,
+                    "elementAttack": 422565,
+                    "elementArmor": 89982,
+                    "elementSpiritPower": 6750000,
+                    "element": "earth",
+                    "elementSpiritLevel": 120,
+                    "elementSpiritStar": 6,
+                    "skin": 0
+                },
+                "4013": {
+                    "id": 4013,
+                    "xp": 686760,
+                    "level": 120,
+                    "star": 6,
+                    "skills": {
+                        "4016": 120,
+                        "4017": 120
+                    },
+                    "power": 170274,
+                    "skins": {
+                        "10008": 60
+                    },
+                    "currentSkin": 0,
+                    "artifacts": [
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        }
+                    ],
+                    "scale": 0.8,
+                    "type": "titan",
+                    "perks": null,
+                    "anticrit": 1,
+                    "antidodge": 1,
+                    "hp": 6586625.11,
+                    "physicalAttack": 1165347.03,
+                    "elementAttack": 422565,
+                    "elementArmor": 89982,
+                    "elementSpiritPower": 1462500,
+                    "element": "fire",
+                    "elementSpiritLevel": 120,
+                    "elementSpiritStar": 6,
+                    "skin": 0
+                },
+                "4022": {
+                    "id": 4022,
+                    "xp": 686760,
+                    "level": 120,
+                    "star": 6,
+                    "skills": {
+                        "4023": 120
+                    },
+                    "power": 170313,
+                    "skins": {
+                        "10011": 60
+                    },
+                    "currentSkin": 0,
+                    "artifacts": [
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        }
+                    ],
+                    "scale": 0.8,
+                    "type": "titan",
+                    "perks": null,
+                    "anticrit": 1,
+                    "antidodge": 1,
+                    "hp": 14392848.86,
+                    "physicalAttack": 580457.44,
+                    "elementAttack": 422565,
+                    "elementArmor": 89982,
+                    "elementSpiritPower": 6750000,
+                    "element": "earth",
+                    "elementSpiritLevel": 120,
+                    "elementSpiritStar": 6,
+                    "skin": 0
+                },
+                "4020": {
+                    "id": 4020,
+                    "xp": 686760,
+                    "level": 120,
+                    "star": 6,
+                    "skills": {
+                        "4019": 120
+                    },
+                    "power": 185996,
+                    "skins": {
+                        "10009": 60,
+                        "10015": 60
+                    },
+                    "currentSkin": 10015,
+                    "artifacts": [
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        }
+                    ],
+                    "scale": 0.8,
+                    "type": "titan",
+                    "perks": null,
+                    "anticrit": 1,
+                    "antidodge": 1,
+                    "hp": 16772882.059999999,
+                    "physicalAttack": 402414.82,
+                    "elementArmor": 139047,
+                    "elementAttack": 422565,
+                    "elementSpiritPower": 6750000,
+                    "element": "earth",
+                    "elementSpiritLevel": 120,
+                    "elementSpiritStar": 6,
+                    "skin": 10015
+                }
+            },
+            "defenders": [
+                {
+                    "1": {
+                        "id": 4020,
+                        "xp": 686760,
+                        "level": 120,
+                        "star": 6,
+                        "skills": {
+                            "4019": 120
+                        },
+                        "power": 185996,
+                        "skins": {
+                            "10009": 60,
+                            "10015": 60
+                        },
+                        "currentSkin": 10015,
+                        "artifacts": [
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            }
+                        ],
+                        "scale": 0.8,
+                        "type": "titan",
+                        "perks": null,
+                        "anticrit": 1,
+                        "antidodge": 1,
+                        "hp": 16772882.059999999,
+                        "physicalAttack": 402414.82,
+                        "elementArmor": 139047,
+                        "elementAttack": 422565,
+                        "elementSpiritPower": 6750000,
+                        "element": "earth",
+                        "elementSpiritLevel": 120,
+                        "elementSpiritStar": 6,
+                        "skin": 10015,
+                        "state": {
+                            "hp": 16772882,
+                            "energy": 0,
+                            "isDead": false,
+                            "maxHp": 16772882
+                        }
+                    },
+                    "2": {
+                        "id": 4023,
+                        "xp": 686760,
+                        "level": 120,
+                        "star": 6,
+                        "skills": {
+                            "4025": 120,
+                            "4026": 120
+                        },
+                        "power": 170336,
+                        "skins": {
+                            "10012": 60
+                        },
+                        "currentSkin": 0,
+                        "artifacts": [
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            }
+                        ],
+                        "scale": 0.8,
+                        "type": "titan",
+                        "perks": null,
+                        "anticrit": 1,
+                        "antidodge": 1,
+                        "hp": 13620313.35,
+                        "physicalAttack": 638741.97,
+                        "elementAttack": 422565,
+                        "elementArmor": 89982,
+                        "elementSpiritPower": 6750000,
+                        "element": "earth",
+                        "elementSpiritLevel": 120,
+                        "elementSpiritStar": 6,
+                        "skin": 0,
+                        "state": {
+                            "hp": 13620313,
+                            "energy": 0,
+                            "isDead": false,
+                            "maxHp": 13620313
+                        }
+                    },
+                    "3": {
+                        "id": 4022,
+                        "xp": 686760,
+                        "level": 120,
+                        "star": 6,
+                        "skills": {
+                            "4023": 120
+                        },
+                        "power": 170313,
+                        "skins": {
+                            "10011": 60
+                        },
+                        "currentSkin": 0,
+                        "artifacts": [
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            }
+                        ],
+                        "scale": 0.8,
+                        "type": "titan",
+                        "perks": null,
+                        "anticrit": 1,
+                        "antidodge": 1,
+                        "hp": 14392848.86,
+                        "physicalAttack": 580457.44,
+                        "elementAttack": 422565,
+                        "elementArmor": 89982,
+                        "elementSpiritPower": 6750000,
+                        "element": "earth",
+                        "elementSpiritLevel": 120,
+                        "elementSpiritStar": 6,
+                        "skin": 0,
+                        "state": {
+                            "hp": 14392848,
+                            "energy": 0,
+                            "isDead": false,
+                            "maxHp": 14392848
+                        }
+                    },
+                    "4": {
+                        "id": 4021,
+                        "xp": 686760,
+                        "level": 120,
+                        "star": 6,
+                        "skills": {
+                            "4021": 120
+                        },
+                        "power": 170278,
+                        "skins": {
+                            "10010": 60
+                        },
+                        "currentSkin": 0,
+                        "artifacts": [
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            }
+                        ],
+                        "scale": 0.8,
+                        "type": "titan",
+                        "perks": null,
+                        "anticrit": 1,
+                        "antidodge": 1,
+                        "hp": 11444600.73,
+                        "physicalAttack": 801066.1799999999,
+                        "elementAttack": 422565,
+                        "elementArmor": 89982,
+                        "elementSpiritPower": 6750000,
+                        "element": "earth",
+                        "elementSpiritLevel": 120,
+                        "elementSpiritStar": 6,
+                        "skin": 0,
+                        "state": {
+                            "hp": 11444600,
+                            "energy": 0,
+                            "isDead": false,
+                            "maxHp": 11444600
+                        }
+                    },
+                    "5": {
+                        "id": 4003,
+                        "xp": 686760,
+                        "level": 120,
+                        "star": 6,
+                        "skills": {
+                            "4007": 120,
+                            "4008": 120
+                        },
+                        "power": 170314,
+                        "skins": {
+                            "10004": 60
+                        },
+                        "currentSkin": 0,
+                        "artifacts": [
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            },
+                            {
+                                "level": 120,
+                                "star": 6
+                            }
+                        ],
+                        "scale": 0.8,
+                        "type": "titan",
+                        "perks": null,
+                        "anticrit": 1,
+                        "antidodge": 1,
+                        "hp": 10466148.379999999,
+                        "physicalAttack": 874974.48,
+                        "elementAttack": 422565,
+                        "elementArmor": 89982,
+                        "elementSpiritPower": 525000,
+                        "element": "water",
+                        "elementSpiritLevel": 120,
+                        "elementSpiritStar": 6,
+                        "skin": 0,
+                        "state": {
+                            "hp": 10466148,
+                            "energy": 0,
+                            "isDead": false,
+                            "maxHp": 10466148
+                        }
+                    }
+                }
+            ],
+            "effects": [],
+            "reward": [],
+            "startTime": "1664808032",
+            "seed": "337267233",
+            "type": "clan_global_pvp_titan",
+            "id": "1664808032590200158",
+            "progress": [
+                {
+                    "v": 213,
+                    "b": 0,
+                    "seed": 337267233,
+                    "attackers": {
+                        "input": [
+                            "auto",
+                            0,
+                            0,
+                            "auto",
+                            0,
+                            0
+                        ],
+                        "heroes": {
+                            "4020": {
+                                "hp": 1279950,
+                                "energy": 709,
+                                "isDead": false
+                            },
+                            "4021": {
+                                "hp": 6736685,
+                                "energy": 500,
+                                "isDead": false
+                            },
+                            "4022": {
+                                "hp": 8900188,
+                                "energy": 600,
+                                "isDead": false
+                            },
+                            "4023": {
+                                "hp": 8011085,
+                                "energy": 500,
+                                "isDead": false
+                            }
+                        }
+                    },
+                    "defenders": {
+                        "input": [],
+                        "heroes": []
+                    }
+                }
+            ],
+            "endTime": "1664808032",
+            "result": {
+                "win": true,
+                "stars": 2,
+                "serverVersion": 213
+            }
+        },
+        "users": {
+            "10373342": {
+                "id": "10373342",
+                "name": "Matt(Dirty Pig)",
+                "lastLoginTime": "1665294587",
+                "serverId": "5",
+                "level": "130",
+                "clanId": "69612",
+                "clanRole": "4",
+                "avatarId": "459",
+                "isChatModerator": false,
+                "frameId": 23,
+                "leagueId": 3,
+                "allowPm": "all",
+                "clanTitle": "Pink Pigs",
+                "clanIcon": {
+                    "flagColor1": 7,
+                    "flagColor2": 7,
+                    "flagShape": 0,
+                    "iconColor": 6,
+                    "iconShape": 35
+                }
+            },
+            "12018590": {
+                "id": "12018590",
+                "name": "Eros",
+                "lastLoginTime": "1665277014",
+                "serverId": "6",
+                "level": "130",
+                "clanId": "62411",
+                "clanRole": "3",
+                "avatarId": "622",
+                "isChatModerator": false,
+                "frameId": 73,
+                "leagueId": 3,
+                "allowPm": "all",
+                "clanTitle": "A-O-D",
+                "clanIcon": {
+                    "flagColor1": 16,
+                    "flagColor2": 19,
+                    "flagShape": 5,
+                    "iconColor": 0,
+                    "iconShape": 8
+                }
+            }
+        }
+    }
+}
+
+# Full API response
+{
+    "date": 1665294600.814394,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": {
+                    "replay": {
+                        "userId": "10373342",
+                        "typeId": "12018590",
+                        "attackers": {
+                            "4021": {
+                                "id": 4021,
+                                "xp": 686760,
+                                "level": 120,
+                                "star": 6,
+                                "skills": {
+                                    "4021": 120
+                                },
+                                "power": 170278,
+                                "skins": {
+                                    "10010": 60
+                                },
+                                "currentSkin": 0,
+                                "artifacts": [
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    }
+                                ],
+                                "scale": 0.8,
+                                "type": "titan",
+                                "perks": null,
+                                "anticrit": 1,
+                                "antidodge": 1,
+                                "hp": 11444600.73,
+                                "physicalAttack": 801066.1799999999,
+                                "elementAttack": 422565,
+                                "elementArmor": 89982,
+                                "elementSpiritPower": 6750000,
+                                "element": "earth",
+                                "elementSpiritLevel": 120,
+                                "elementSpiritStar": 6,
+                                "skin": 0
+                            },
+                            "4023": {
+                                "id": 4023,
+                                "xp": 686760,
+                                "level": 120,
+                                "star": 6,
+                                "skills": {
+                                    "4025": 120,
+                                    "4026": 120
+                                },
+                                "power": 170336,
+                                "skins": {
+                                    "10012": 60
+                                },
+                                "currentSkin": 0,
+                                "artifacts": [
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    }
+                                ],
+                                "scale": 0.8,
+                                "type": "titan",
+                                "perks": null,
+                                "anticrit": 1,
+                                "antidodge": 1,
+                                "hp": 13620313.35,
+                                "physicalAttack": 638741.97,
+                                "elementAttack": 422565,
+                                "elementArmor": 89982,
+                                "elementSpiritPower": 6750000,
+                                "element": "earth",
+                                "elementSpiritLevel": 120,
+                                "elementSpiritStar": 6,
+                                "skin": 0
+                            },
+                            "4013": {
+                                "id": 4013,
+                                "xp": 686760,
+                                "level": 120,
+                                "star": 6,
+                                "skills": {
+                                    "4016": 120,
+                                    "4017": 120
+                                },
+                                "power": 170274,
+                                "skins": {
+                                    "10008": 60
+                                },
+                                "currentSkin": 0,
+                                "artifacts": [
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    }
+                                ],
+                                "scale": 0.8,
+                                "type": "titan",
+                                "perks": null,
+                                "anticrit": 1,
+                                "antidodge": 1,
+                                "hp": 6586625.11,
+                                "physicalAttack": 1165347.03,
+                                "elementAttack": 422565,
+                                "elementArmor": 89982,
+                                "elementSpiritPower": 1462500,
+                                "element": "fire",
+                                "elementSpiritLevel": 120,
+                                "elementSpiritStar": 6,
+                                "skin": 0
+                            },
+                            "4022": {
+                                "id": 4022,
+                                "xp": 686760,
+                                "level": 120,
+                                "star": 6,
+                                "skills": {
+                                    "4023": 120
+                                },
+                                "power": 170313,
+                                "skins": {
+                                    "10011": 60
+                                },
+                                "currentSkin": 0,
+                                "artifacts": [
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    }
+                                ],
+                                "scale": 0.8,
+                                "type": "titan",
+                                "perks": null,
+                                "anticrit": 1,
+                                "antidodge": 1,
+                                "hp": 14392848.86,
+                                "physicalAttack": 580457.44,
+                                "elementAttack": 422565,
+                                "elementArmor": 89982,
+                                "elementSpiritPower": 6750000,
+                                "element": "earth",
+                                "elementSpiritLevel": 120,
+                                "elementSpiritStar": 6,
+                                "skin": 0
+                            },
+                            "4020": {
+                                "id": 4020,
+                                "xp": 686760,
+                                "level": 120,
+                                "star": 6,
+                                "skills": {
+                                    "4019": 120
+                                },
+                                "power": 185996,
+                                "skins": {
+                                    "10009": 60,
+                                    "10015": 60
+                                },
+                                "currentSkin": 10015,
+                                "artifacts": [
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 6
+                                    }
+                                ],
+                                "scale": 0.8,
+                                "type": "titan",
+                                "perks": null,
+                                "anticrit": 1,
+                                "antidodge": 1,
+                                "hp": 16772882.059999999,
+                                "physicalAttack": 402414.82,
+                                "elementArmor": 139047,
+                                "elementAttack": 422565,
+                                "elementSpiritPower": 6750000,
+                                "element": "earth",
+                                "elementSpiritLevel": 120,
+                                "elementSpiritStar": 6,
+                                "skin": 10015
+                            }
+                        },
+                        "defenders": [
+                            {
+                                "1": {
+                                    "id": 4020,
+                                    "xp": 686760,
+                                    "level": 120,
+                                    "star": 6,
+                                    "skills": {
+                                        "4019": 120
+                                    },
+                                    "power": 185996,
+                                    "skins": {
+                                        "10009": 60,
+                                        "10015": 60
+                                    },
+                                    "currentSkin": 10015,
+                                    "artifacts": [
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        }
+                                    ],
+                                    "scale": 0.8,
+                                    "type": "titan",
+                                    "perks": null,
+                                    "anticrit": 1,
+                                    "antidodge": 1,
+                                    "hp": 16772882.059999999,
+                                    "physicalAttack": 402414.82,
+                                    "elementArmor": 139047,
+                                    "elementAttack": 422565,
+                                    "elementSpiritPower": 6750000,
+                                    "element": "earth",
+                                    "elementSpiritLevel": 120,
+                                    "elementSpiritStar": 6,
+                                    "skin": 10015,
+                                    "state": {
+                                        "hp": 16772882,
+                                        "energy": 0,
+                                        "isDead": false,
+                                        "maxHp": 16772882
+                                    }
+                                },
+                                "2": {
+                                    "id": 4023,
+                                    "xp": 686760,
+                                    "level": 120,
+                                    "star": 6,
+                                    "skills": {
+                                        "4025": 120,
+                                        "4026": 120
+                                    },
+                                    "power": 170336,
+                                    "skins": {
+                                        "10012": 60
+                                    },
+                                    "currentSkin": 0,
+                                    "artifacts": [
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        }
+                                    ],
+                                    "scale": 0.8,
+                                    "type": "titan",
+                                    "perks": null,
+                                    "anticrit": 1,
+                                    "antidodge": 1,
+                                    "hp": 13620313.35,
+                                    "physicalAttack": 638741.97,
+                                    "elementAttack": 422565,
+                                    "elementArmor": 89982,
+                                    "elementSpiritPower": 6750000,
+                                    "element": "earth",
+                                    "elementSpiritLevel": 120,
+                                    "elementSpiritStar": 6,
+                                    "skin": 0,
+                                    "state": {
+                                        "hp": 13620313,
+                                        "energy": 0,
+                                        "isDead": false,
+                                        "maxHp": 13620313
+                                    }
+                                },
+                                "3": {
+                                    "id": 4022,
+                                    "xp": 686760,
+                                    "level": 120,
+                                    "star": 6,
+                                    "skills": {
+                                        "4023": 120
+                                    },
+                                    "power": 170313,
+                                    "skins": {
+                                        "10011": 60
+                                    },
+                                    "currentSkin": 0,
+                                    "artifacts": [
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        }
+                                    ],
+                                    "scale": 0.8,
+                                    "type": "titan",
+                                    "perks": null,
+                                    "anticrit": 1,
+                                    "antidodge": 1,
+                                    "hp": 14392848.86,
+                                    "physicalAttack": 580457.44,
+                                    "elementAttack": 422565,
+                                    "elementArmor": 89982,
+                                    "elementSpiritPower": 6750000,
+                                    "element": "earth",
+                                    "elementSpiritLevel": 120,
+                                    "elementSpiritStar": 6,
+                                    "skin": 0,
+                                    "state": {
+                                        "hp": 14392848,
+                                        "energy": 0,
+                                        "isDead": false,
+                                        "maxHp": 14392848
+                                    }
+                                },
+                                "4": {
+                                    "id": 4021,
+                                    "xp": 686760,
+                                    "level": 120,
+                                    "star": 6,
+                                    "skills": {
+                                        "4021": 120
+                                    },
+                                    "power": 170278,
+                                    "skins": {
+                                        "10010": 60
+                                    },
+                                    "currentSkin": 0,
+                                    "artifacts": [
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        }
+                                    ],
+                                    "scale": 0.8,
+                                    "type": "titan",
+                                    "perks": null,
+                                    "anticrit": 1,
+                                    "antidodge": 1,
+                                    "hp": 11444600.73,
+                                    "physicalAttack": 801066.1799999999,
+                                    "elementAttack": 422565,
+                                    "elementArmor": 89982,
+                                    "elementSpiritPower": 6750000,
+                                    "element": "earth",
+                                    "elementSpiritLevel": 120,
+                                    "elementSpiritStar": 6,
+                                    "skin": 0,
+                                    "state": {
+                                        "hp": 11444600,
+                                        "energy": 0,
+                                        "isDead": false,
+                                        "maxHp": 11444600
+                                    }
+                                },
+                                "5": {
+                                    "id": 4003,
+                                    "xp": 686760,
+                                    "level": 120,
+                                    "star": 6,
+                                    "skills": {
+                                        "4007": 120,
+                                        "4008": 120
+                                    },
+                                    "power": 170314,
+                                    "skins": {
+                                        "10004": 60
+                                    },
+                                    "currentSkin": 0,
+                                    "artifacts": [
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        }
+                                    ],
+                                    "scale": 0.8,
+                                    "type": "titan",
+                                    "perks": null,
+                                    "anticrit": 1,
+                                    "antidodge": 1,
+                                    "hp": 10466148.379999999,
+                                    "physicalAttack": 874974.48,
+                                    "elementAttack": 422565,
+                                    "elementArmor": 89982,
+                                    "elementSpiritPower": 525000,
+                                    "element": "water",
+                                    "elementSpiritLevel": 120,
+                                    "elementSpiritStar": 6,
+                                    "skin": 0,
+                                    "state": {
+                                        "hp": 10466148,
+                                        "energy": 0,
+                                        "isDead": false,
+                                        "maxHp": 10466148
+                                    }
+                                }
+                            }
+                        ],
+                        "effects": [],
+                        "reward": [],
+                        "startTime": "1664808032",
+                        "seed": "337267233",
+                        "type": "clan_global_pvp_titan",
+                        "id": "1664808032590200158",
+                        "progress": [
+                            {
+                                "v": 213,
+                                "b": 0,
+                                "seed": 337267233,
+                                "attackers": {
+                                    "input": [
+                                        "auto",
+                                        0,
+                                        0,
+                                        "auto",
+                                        0,
+                                        0
+                                    ],
+                                    "heroes": {
+                                        "4020": {
+                                            "hp": 1279950,
+                                            "energy": 709,
+                                            "isDead": false
+                                        },
+                                        "4021": {
+                                            "hp": 6736685,
+                                            "energy": 500,
+                                            "isDead": false
+                                        },
+                                        "4022": {
+                                            "hp": 8900188,
+                                            "energy": 600,
+                                            "isDead": false
+                                        },
+                                        "4023": {
+                                            "hp": 8011085,
+                                            "energy": 500,
+                                            "isDead": false
+                                        }
+                                    }
+                                },
+                                "defenders": {
+                                    "input": [],
+                                    "heroes": []
+                                }
+                            }
+                        ],
+                        "endTime": "1664808032",
+                        "result": {
+                            "win": true,
+                            "stars": 2,
+                            "serverVersion": 213
+                        }
+                    },
+                    "users": {
+                        "10373342": {
+                            "id": "10373342",
+                            "name": "Matt(Dirty Pig)",
+                            "lastLoginTime": "1665294587",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "459",
+                            "isChatModerator": false,
+                            "frameId": 23,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "clanTitle": "Pink Pigs",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 0,
+                                "iconColor": 6,
+                                "iconShape": 35
+                            }
+                        },
+                        "12018590": {
+                            "id": "12018590",
+                            "name": "Eros",
+                            "lastLoginTime": "1665277014",
+                            "serverId": "6",
+                            "level": "130",
+                            "clanId": "62411",
+                            "clanRole": "3",
+                            "avatarId": "622",
+                            "isChatModerator": false,
+                            "frameId": 73,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "clanTitle": "A-O-D",
+                            "clanIcon": {
+                                "flagColor1": 16,
+                                "flagColor2": 19,
+                                "flagShape": 5,
+                                "iconColor": 0,
+                                "iconShape": 8
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

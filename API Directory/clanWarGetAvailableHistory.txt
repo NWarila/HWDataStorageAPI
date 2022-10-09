@@ -1,0 +1,486 @@
+<# Important Notes (Category: Misc Logging)
+    This API is called from the game client when the player opens their guilds
+guild wars logs. The important information to be logged is the the history field.
+The goal of collecting this API is to be able to track a guilds GW performance
+over time.
+
+Long Term goals (Out of Scope of this project)
+    Eventually this information will be used to display various statistics about a
+guild such as average score, what guilds a guild struggles the most/least against,
+etc. Overall this is one of the less important APIs.
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665288780.504174,
+    'id':'clanWarGetAvailableHistory',
+    'Args': '',
+    'Request': '{"calls": [{"name": "clanWarGetAvailableHistory","args": {},"ident": "group_0_body"}]}',
+    'Body': [
+        {
+            "season": "202239",
+            "day": "1",
+            "attackersId": "69612",
+            "defendersId": "65949",
+            "points": "1400",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "Grace",
+                "icon": {
+                    "flagColor1": 2,
+                    "flagColor2": 2,
+                    "flagShape": 14,
+                    "iconColor": 19,
+                    "iconShape": 32
+                },
+                "serverId": "5",
+                "id": "65949"
+            },
+            "enemyPoints": "873"
+        },
+        {
+            "season": "202239",
+            "day": "2",
+            "attackersId": "69612",
+            "defendersId": "41306",
+            "points": "1400",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "Rune Runners",
+                "icon": {
+                    "flagColor1": 7,
+                    "flagColor2": 1,
+                    "flagShape": 14,
+                    "iconColor": 3,
+                    "iconShape": 3
+                },
+                "serverId": "5",
+                "id": "41306"
+            },
+            "enemyPoints": "875"
+        },
+        {
+            "season": "202239",
+            "day": "3",
+            "attackersId": "69612",
+            "defendersId": "65722",
+            "points": "1400",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "Dark Obsession",
+                "icon": {
+                    "flagColor1": 0,
+                    "flagColor2": 0,
+                    "flagShape": 8,
+                    "iconColor": 16,
+                    "iconShape": 26
+                },
+                "serverId": "5",
+                "id": "65722"
+            },
+            "enemyPoints": "767"
+        },
+        {
+            "season": "202239",
+            "day": "4",
+            "attackersId": "69612",
+            "defendersId": "69341",
+            "points": "1340",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "The Uglies",
+                "icon": {
+                    "flagColor1": 1,
+                    "flagColor2": 0,
+                    "flagShape": 14,
+                    "iconColor": 7,
+                    "iconShape": 43
+                },
+                "serverId": "5",
+                "id": "69341"
+            },
+            "enemyPoints": "932"
+        },
+        {
+            "season": "202239",
+            "day": "5",
+            "attackersId": "69612",
+            "defendersId": "67166",
+            "points": "1347",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "PIRANHA.",
+                "icon": {
+                    "flagColor1": 7,
+                    "flagColor2": 19,
+                    "flagShape": 2,
+                    "iconColor": 0,
+                    "iconShape": 5
+                },
+                "serverId": "5",
+                "id": "67166"
+            },
+            "enemyPoints": "1040"
+        },
+        {
+            "season": "202240",
+            "day": "1",
+            "attackersId": "69612",
+            "defendersId": "65722",
+            "points": "1320",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "Dark Obsession",
+                "icon": {
+                    "flagColor1": 0,
+                    "flagColor2": 0,
+                    "flagShape": 8,
+                    "iconColor": 16,
+                    "iconShape": 26
+                },
+                "serverId": "5",
+                "id": "65722"
+            },
+            "enemyPoints": "766"
+        },
+        {
+            "season": "202240",
+            "day": "2",
+            "attackersId": "69612",
+            "defendersId": "65949",
+            "points": "1340",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "Grace",
+                "icon": {
+                    "flagColor1": 2,
+                    "flagColor2": 2,
+                    "flagShape": 14,
+                    "iconColor": 19,
+                    "iconShape": 32
+                },
+                "serverId": "5",
+                "id": "65949"
+            },
+            "enemyPoints": "850"
+        },
+        {
+            "season": "202240",
+            "day": "3",
+            "attackersId": "69612",
+            "defendersId": "69341",
+            "points": "1400",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "The Uglies",
+                "icon": {
+                    "flagColor1": 1,
+                    "flagColor2": 0,
+                    "flagShape": 14,
+                    "iconColor": 7,
+                    "iconShape": 43
+                },
+                "serverId": "5",
+                "id": "69341"
+            },
+            "enemyPoints": "960"
+        },
+        {
+            "season": "202240",
+            "day": "4",
+            "attackersId": "69612",
+            "defendersId": "41306",
+            "points": "1340",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "Rune Runners",
+                "icon": {
+                    "flagColor1": 7,
+                    "flagColor2": 1,
+                    "flagShape": 14,
+                    "iconColor": 3,
+                    "iconShape": 3
+                },
+                "serverId": "5",
+                "id": "41306"
+            },
+            "enemyPoints": "1000"
+        },
+        {
+            "season": "202240",
+            "day": "5",
+            "attackersId": "69612",
+            "defendersId": "67166",
+            "points": "1320",
+            "league": "1",
+            "type": "0",
+            "enemyClan": {
+                "title": "PIRANHA.",
+                "icon": {
+                    "flagColor1": 7,
+                    "flagColor2": 19,
+                    "flagShape": 2,
+                    "iconColor": 0,
+                    "iconShape": 5
+                },
+                "serverId": "5",
+                "id": "67166"
+            },
+            "enemyPoints": "946"
+        }
+    ]
+}
+
+# Full API response
+{
+    "date": 1665288780.504174,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": {
+                    "history": [
+                        {
+                            "season": "202239",
+                            "day": "1",
+                            "attackersId": "69612",
+                            "defendersId": "65949",
+                            "points": "1400",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "Grace",
+                                "icon": {
+                                    "flagColor1": 2,
+                                    "flagColor2": 2,
+                                    "flagShape": 14,
+                                    "iconColor": 19,
+                                    "iconShape": 32
+                                },
+                                "serverId": "5",
+                                "id": "65949"
+                            },
+                            "enemyPoints": "873"
+                        },
+                        {
+                            "season": "202239",
+                            "day": "2",
+                            "attackersId": "69612",
+                            "defendersId": "41306",
+                            "points": "1400",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "Rune Runners",
+                                "icon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 1,
+                                    "flagShape": 14,
+                                    "iconColor": 3,
+                                    "iconShape": 3
+                                },
+                                "serverId": "5",
+                                "id": "41306"
+                            },
+                            "enemyPoints": "875"
+                        },
+                        {
+                            "season": "202239",
+                            "day": "3",
+                            "attackersId": "69612",
+                            "defendersId": "65722",
+                            "points": "1400",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "Dark Obsession",
+                                "icon": {
+                                    "flagColor1": 0,
+                                    "flagColor2": 0,
+                                    "flagShape": 8,
+                                    "iconColor": 16,
+                                    "iconShape": 26
+                                },
+                                "serverId": "5",
+                                "id": "65722"
+                            },
+                            "enemyPoints": "767"
+                        },
+                        {
+                            "season": "202239",
+                            "day": "4",
+                            "attackersId": "69612",
+                            "defendersId": "69341",
+                            "points": "1340",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "The Uglies",
+                                "icon": {
+                                    "flagColor1": 1,
+                                    "flagColor2": 0,
+                                    "flagShape": 14,
+                                    "iconColor": 7,
+                                    "iconShape": 43
+                                },
+                                "serverId": "5",
+                                "id": "69341"
+                            },
+                            "enemyPoints": "932"
+                        },
+                        {
+                            "season": "202239",
+                            "day": "5",
+                            "attackersId": "69612",
+                            "defendersId": "67166",
+                            "points": "1347",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "PIRANHA.",
+                                "icon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 19,
+                                    "flagShape": 2,
+                                    "iconColor": 0,
+                                    "iconShape": 5
+                                },
+                                "serverId": "5",
+                                "id": "67166"
+                            },
+                            "enemyPoints": "1040"
+                        },
+                        {
+                            "season": "202240",
+                            "day": "1",
+                            "attackersId": "69612",
+                            "defendersId": "65722",
+                            "points": "1320",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "Dark Obsession",
+                                "icon": {
+                                    "flagColor1": 0,
+                                    "flagColor2": 0,
+                                    "flagShape": 8,
+                                    "iconColor": 16,
+                                    "iconShape": 26
+                                },
+                                "serverId": "5",
+                                "id": "65722"
+                            },
+                            "enemyPoints": "766"
+                        },
+                        {
+                            "season": "202240",
+                            "day": "2",
+                            "attackersId": "69612",
+                            "defendersId": "65949",
+                            "points": "1340",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "Grace",
+                                "icon": {
+                                    "flagColor1": 2,
+                                    "flagColor2": 2,
+                                    "flagShape": 14,
+                                    "iconColor": 19,
+                                    "iconShape": 32
+                                },
+                                "serverId": "5",
+                                "id": "65949"
+                            },
+                            "enemyPoints": "850"
+                        },
+                        {
+                            "season": "202240",
+                            "day": "3",
+                            "attackersId": "69612",
+                            "defendersId": "69341",
+                            "points": "1400",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "The Uglies",
+                                "icon": {
+                                    "flagColor1": 1,
+                                    "flagColor2": 0,
+                                    "flagShape": 14,
+                                    "iconColor": 7,
+                                    "iconShape": 43
+                                },
+                                "serverId": "5",
+                                "id": "69341"
+                            },
+                            "enemyPoints": "960"
+                        },
+                        {
+                            "season": "202240",
+                            "day": "4",
+                            "attackersId": "69612",
+                            "defendersId": "41306",
+                            "points": "1340",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "Rune Runners",
+                                "icon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 1,
+                                    "flagShape": 14,
+                                    "iconColor": 3,
+                                    "iconShape": 3
+                                },
+                                "serverId": "5",
+                                "id": "41306"
+                            },
+                            "enemyPoints": "1000"
+                        },
+                        {
+                            "season": "202240",
+                            "day": "5",
+                            "attackersId": "69612",
+                            "defendersId": "67166",
+                            "points": "1320",
+                            "league": "1",
+                            "type": "0",
+                            "enemyClan": {
+                                "title": "PIRANHA.",
+                                "icon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 19,
+                                    "flagShape": 2,
+                                    "iconColor": 0,
+                                    "iconShape": 5
+                                },
+                                "serverId": "5",
+                                "id": "67166"
+                            },
+                            "enemyPoints": "946"
+                        }
+                    ],
+                    "results": {
+                        "previous": {
+                            "points": "6720",
+                            "league": "1",
+                            "position": "1"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
