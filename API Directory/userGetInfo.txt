@@ -1,0 +1,368 @@
+<# Important Notes (Category: Replays)                                                                           |
+    This API is loaded when a player who has the extension installed loads the game. It's in game
+    purpose is to provide the game client with the users account information. This API will make up
+    the core of the player table.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1. This API is one of the only APIs where alot of information is removed from the extension. I feel alot
+    of the information serves no purpose and therefore should not be monitored.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665860107.049939,
+    'id':'userGetInfo',
+    'Args': '',
+    'Request': '{"calls": [{"name": "userGetInfo","args": {},"ident": "userGetInfo"}]}',
+    'Body': {
+        "id": "12491146",
+        "name": "Hell Bomb",
+        "lastLoginTime": "1665854947",
+        "serverId": "5",
+        "level": "130",
+        "clanId": "69612",
+        "clanRole": "255",
+        "avatarId": "894",
+        "isChatModerator": false,
+        "frameId": 67,
+        "leagueId": 3,
+        "allowPm": "all",
+        "accountId": "2308149682600244",
+        "timeZone": -4,
+        "starMoney": 47738,
+        "vipPoints": "2356485",
+        "gold": 8294777069,
+        "flags": "13",
+        "nextDayTs": 1665910800,
+        "nextServerDayTs": 1665896400,
+        "experience": "0",
+        "maxLevel": 130,
+        "registrationTime": "1565723655"
+    }
+}
+
+# Full API response
+{
+    "date": 1665860107.049939,
+    "results": [
+        {
+            "ident": "userGetInfo",
+            "result": {
+                "response": {
+                    "id": "12491146",
+                    "name": "Hell Bomb",
+                    "lastLoginTime": "1665854947",
+                    "serverId": "5",
+                    "level": "130",
+                    "clanId": "69612",
+                    "clanRole": "255",
+                    "avatarId": "894",
+                    "isChatModerator": false,
+                    "frameId": 67,
+                    "leagueId": 3,
+                    "allowPm": "all",
+                    "accountId": "2308149682600244",
+                    "timeZone": -4,
+                    "starMoney": 47738,
+                    "vipPoints": "2356485",
+                    "gold": 8294777069,
+                    "refillable": [
+                        {
+                            "id": 1,
+                            "amount": 190,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 2,
+                            "amount": 2116,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 3,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 4,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 5,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 3442
+                        },
+                        {
+                            "id": 6,
+                            "amount": 5,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 7,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 8,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 10,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 11,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 12,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 13,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 14,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 15,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 16,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 17,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 19,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 20,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 1882
+                        },
+                        {
+                            "id": 21,
+                            "amount": 5,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 22,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 23,
+                            "amount": 2,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 24,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 25,
+                            "amount": 2,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 26,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 27,
+                            "amount": 5,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 28,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 29,
+                            "amount": 5,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 30,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 31,
+                            "amount": 5,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 32,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 33,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 14
+                        },
+                        {
+                            "id": 34,
+                            "amount": 3,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 35,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 36,
+                            "amount": 3,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 37,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 38,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 39,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 40,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 41,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 42,
+                            "amount": 1,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 43,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 44,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 45,
+                            "amount": 2,
+                            "lastRefill": 1665810000,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 46,
+                            "amount": 0,
+                            "lastRefill": 1665860106,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 47,
+                            "amount": 7,
+                            "lastRefill": 1665810000,
+                            "boughtToday": 0
+                        },
+                        {
+                            "id": 48,
+                            "amount": 5,
+                            "lastRefill": 1665810000,
+                            "boughtToday": 0
+                        }
+                    ],
+                    "flags": "13",
+                    "tutorialStep": "9999",
+                    "nextDayTs": 1665910800,
+                    "nextServerDayTs": 1665896400,
+                    "experience": "0",
+                    "maxLevel": 130,
+                    "useEnergyBuyLimit": false,
+                    "vkPayIsActive": false,
+                    "registrationTime": "1565723655"
+                }
+            }
+        }
+    ]
+}

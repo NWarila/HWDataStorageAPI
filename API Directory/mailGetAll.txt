@@ -1,0 +1,3256 @@
+<# Important Notes (Category: Player Information)                                                              |
+    This API is loaded when a player who has the extension installed loads the game. It's in game
+    purpose is to provide the game client with random user information. This API should only fill in
+    and missing player information.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1. 
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665860107.049939,
+    'id':'mailGetAll',
+    'Args': '',
+    'Request': '{"calls": [{"name": "mailGetAll","args": {},"ident": "mailGetAll"}]}',
+    'Body': {
+        "10373122": {
+            "id": "10373122",
+            "name": "Russell",
+            "lastLoginTime": "1665848667",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "382",
+            "isChatModerator": false,
+            "frameId": 73,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "3271174336226106",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10373136": {
+            "id": "10373136",
+            "name": "BBM SARAH DU30",
+            "lastLoginTime": "1665849596",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "909",
+            "isChatModerator": false,
+            "frameId": 67,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2585629774827885",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10373155": {
+            "id": "10373155",
+            "name": "GE Parsival",
+            "lastLoginTime": "1665847040",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "839",
+            "isChatModerator": false,
+            "frameId": 67,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2383049821782868",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10373226": {
+            "id": "10373226",
+            "name": "Ben",
+            "lastLoginTime": "1665833559",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "661",
+            "isChatModerator": false,
+            "frameId": 57,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2357844987583951",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10373247": {
+            "id": "10373247",
+            "name": "VSK[Y]",
+            "lastLoginTime": "1665853829",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "506",
+            "isChatModerator": false,
+            "frameId": 51,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "481169009354372",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10373293": {
+            "id": "10373293",
+            "name": "Teghy",
+            "lastLoginTime": "1665810970",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "1033",
+            "isChatModerator": false,
+            "frameId": 41,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10157342683112667",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10373342": {
+            "id": "10373342",
+            "name": "Matt(Dirty Pig)",
+            "lastLoginTime": "1665810480",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "459",
+            "isChatModerator": false,
+            "frameId": 23,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10214533647601284",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10374918": {
+            "id": "10374918",
+            "name": "MexiPig",
+            "lastLoginTime": "1665849508",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "2",
+            "avatarId": "371",
+            "isChatModerator": false,
+            "frameId": 77,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2510323782363210",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10378295": {
+            "id": "10378295",
+            "name": "Kari",
+            "lastLoginTime": "1665857124",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "333",
+            "isChatModerator": false,
+            "frameId": 88,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "1285758201563661",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10518943": {
+            "id": "10518943",
+            "name": "Light",
+            "lastLoginTime": "1665844160",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "894",
+            "isChatModerator": false,
+            "frameId": 57,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10207747525380974",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "10520008": {
+            "id": "10520008",
+            "name": "OnePunchMan",
+            "lastLoginTime": "1665859947",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "1047",
+            "isChatModerator": false,
+            "frameId": 76,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10156382934966229",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "11966775": {
+            "id": "11966775",
+            "name": "Brian",
+            "lastLoginTime": "1665770164",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "22",
+            "isChatModerator": false,
+            "frameId": 41,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10207337783598933",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12318025": {
+            "id": "12318025",
+            "name": "UseStolenInfo",
+            "lastLoginTime": "1665820149",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "1008",
+            "isChatModerator": false,
+            "frameId": 67,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "3250503471633296",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12318067": {
+            "id": "12318067",
+            "name": "Pig Andy",
+            "lastLoginTime": "1665844555",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "2",
+            "avatarId": "999",
+            "isChatModerator": false,
+            "frameId": 65,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2544981769110620",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12319854": {
+            "id": "12319854",
+            "name": "RankPig",
+            "lastLoginTime": "1665838135",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "24",
+            "isChatModerator": false,
+            "frameId": 57,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10221899976633752",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12320571": {
+            "id": "12320571",
+            "name": "Piggy Bank",
+            "lastLoginTime": "1665857556",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "309",
+            "isChatModerator": false,
+            "frameId": 12,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "3342831222400271",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12392676": {
+            "id": "12392676",
+            "name": "Just",
+            "lastLoginTime": "1665850989",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "499",
+            "isChatModerator": false,
+            "frameId": 48,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10157461740651029",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12393382": {
+            "id": "12393382",
+            "name": "Kari2",
+            "lastLoginTime": "1665859893",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "391",
+            "isChatModerator": false,
+            "frameId": 62,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "105641317467015",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12394201": {
+            "id": "12394201",
+            "name": "Dax",
+            "lastLoginTime": "1665850093",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "907",
+            "isChatModerator": false,
+            "frameId": 41,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "928300674264231",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12480625": {
+            "id": "12480625",
+            "name": "XLiang",
+            "lastLoginTime": "1665857325",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "1036",
+            "isChatModerator": false,
+            "frameId": 41,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2865455913470549",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12520116": {
+            "id": "12520116",
+            "name": "King Arthur ",
+            "lastLoginTime": "1665857649",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "1046",
+            "isChatModerator": false,
+            "frameId": 72,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "3094733463874960",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12521602": {
+            "id": "12521602",
+            "name": "CaffeinatedPig",
+            "lastLoginTime": "1665846251",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "703",
+            "isChatModerator": false,
+            "frameId": 41,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10200256515394275",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12521640": {
+            "id": "12521640",
+            "name": "Hiro Nakamura",
+            "lastLoginTime": "1665853754",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "715",
+            "isChatModerator": false,
+            "frameId": 41,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10210508615125843",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12521680": {
+            "id": "12521680",
+            "name": "Cookie Pig ",
+            "lastLoginTime": "1665852600",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "65",
+            "isChatModerator": false,
+            "frameId": 37,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10155013283229404",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12525915": {
+            "id": "12525915",
+            "name": "Hase-Hasi",
+            "lastLoginTime": "1665848903",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "886",
+            "isChatModerator": false,
+            "frameId": 74,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2787730301452315",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12527223": {
+            "id": "12527223",
+            "name": "Nocash",
+            "lastLoginTime": "1665855817",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "165",
+            "isChatModerator": false,
+            "frameId": 88,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2391177777826126",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "12527339": {
+            "id": "12527339",
+            "name": "God Eater",
+            "lastLoginTime": "1665855873",
+            "serverId": "5",
+            "level": "130",
+            "clanId": "69612",
+            "clanRole": "4",
+            "avatarId": "1003",
+            "isChatModerator": false,
+            "frameId": 77,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "2344029238965693",
+            "clanTitle": "God Eaters",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 7,
+                "flagShape": 8,
+                "iconColor": 0,
+                "iconShape": 43
+            }
+        },
+        "11620357": {
+            "id": "11620357",
+            "name": "Pheegs",
+            "lastLoginTime": "1665810023",
+            "serverId": "32",
+            "level": "130",
+            "clanId": "43222",
+            "clanRole": "4",
+            "avatarId": "561",
+            "isChatModerator": false,
+            "frameId": 64,
+            "leagueId": 3,
+            "allowPm": "all",
+            "accountId": "10218824629748980",
+            "clanTitle": "The Expendables",
+            "clanIcon": {
+                "flagColor1": 7,
+                "flagColor2": 0,
+                "flagShape": 5,
+                "iconColor": 19,
+                "iconShape": 5
+            }
+        },
+        "-309": {
+            "id": -309,
+            "name": "T_NICKNAME_309",
+            "avatarId": 483,
+            "experience": 68985,
+            "level": 80
+        }
+    }
+}
+
+# Full API response
+{
+    "date": 1665860107.049939,
+    "results": [
+        {
+            "ident": "mailGetAll",
+            "result": {
+                "response": {
+                    "letters": [
+                        {
+                            "id": "1365089811",
+                            "type": "dailyGift",
+                            "senderId": "12527339",
+                            "message": "",
+                            "params": {
+                                "accountId": "2344029238965693",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665723288",
+                            "availableUntil": "1667451288"
+                        },
+                        {
+                            "id": "1365095135",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 12500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "4"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665723813",
+                            "availableUntil": "1665983013"
+                        },
+                        {
+                            "id": "1365096552",
+                            "type": "dailyGift",
+                            "senderId": "12520116",
+                            "message": "",
+                            "params": {
+                                "accountId": "3094733463874960",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665723895",
+                            "availableUntil": "1667451895"
+                        },
+                        {
+                            "id": "1365101272",
+                            "type": "dailyGift",
+                            "senderId": "12480625",
+                            "message": "",
+                            "params": {
+                                "accountId": "2865455913470549",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665724201",
+                            "availableUntil": "1667452201"
+                        },
+                        {
+                            "id": "1365106013",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 27500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "5"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665724557",
+                            "availableUntil": "1665983757"
+                        },
+                        {
+                            "id": "1365107843",
+                            "type": "dailyGift",
+                            "senderId": "12320571",
+                            "message": "",
+                            "params": {
+                                "accountId": "3342831222400271",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665724675",
+                            "availableUntil": "1667452675"
+                        },
+                        {
+                            "id": "1365108928",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12480625",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665724734",
+                            "availableUntil": "1668316734"
+                        },
+                        {
+                            "id": "1365109159",
+                            "type": "dailyGift",
+                            "senderId": "10373155",
+                            "message": "",
+                            "params": {
+                                "accountId": "2383049821782868",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665724752",
+                            "availableUntil": "1667452752"
+                        },
+                        {
+                            "id": "1365121949",
+                            "type": "crossClanWarReward",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "result": "draw"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "104": 49
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665725113",
+                            "availableUntil": "1666329913"
+                        },
+                        {
+                            "id": "1365124184",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 45000,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "6"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665725260",
+                            "availableUntil": "1665984460"
+                        },
+                        {
+                            "id": "1365127239",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 65000,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "7"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665725529",
+                            "availableUntil": "1665984729"
+                        },
+                        {
+                            "id": "1365143047",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 750,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "1"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665727008",
+                            "availableUntil": "1665986208"
+                        },
+                        {
+                            "id": "1365153045",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12520116",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 70000,
+                                "consumable": {
+                                    "280": "1"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665728049",
+                            "availableUntil": "1668320049"
+                        },
+                        {
+                            "id": "1365162082",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12520116",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 70000,
+                                "consumable": {
+                                    "280": "1"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665729020",
+                            "availableUntil": "1668321020"
+                        },
+                        {
+                            "id": "1365169254",
+                            "type": "dailyGift",
+                            "senderId": "12525915",
+                            "message": "",
+                            "params": {
+                                "accountId": "2787730301452315",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665729896",
+                            "availableUntil": "1667457896"
+                        },
+                        {
+                            "id": "1365172157",
+                            "type": "dailyGift",
+                            "senderId": "12394201",
+                            "message": "",
+                            "params": {
+                                "accountId": "928300674264231",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665730268",
+                            "availableUntil": "1667458268"
+                        },
+                        {
+                            "id": "1365184567",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12520116",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 70000,
+                                "consumable": {
+                                    "280": "1"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665731855",
+                            "availableUntil": "1668323855"
+                        },
+                        {
+                            "id": "1365197724",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 1800,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665733718",
+                            "availableUntil": "1665992918"
+                        },
+                        {
+                            "id": "1365202063",
+                            "type": "dailyGift",
+                            "senderId": "12521680",
+                            "message": "",
+                            "params": {
+                                "accountId": "10155013283229404",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665734335",
+                            "availableUntil": "1667462335"
+                        },
+                        {
+                            "id": "1365222366",
+                            "type": "dailyGift",
+                            "senderId": "10373247",
+                            "message": "",
+                            "params": {
+                                "accountId": "481169009354372",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665737064",
+                            "availableUntil": "1667465064"
+                        },
+                        {
+                            "id": "1365235022",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12520116",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665738733",
+                            "availableUntil": "1668330733"
+                        },
+                        {
+                            "id": "1365265660",
+                            "type": "dailyGift",
+                            "senderId": "12319854",
+                            "message": "",
+                            "params": {
+                                "accountId": "10221899976633752",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665742991",
+                            "availableUntil": "1667470991"
+                        },
+                        {
+                            "id": "1365275313",
+                            "type": "dailyGift",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": {
+                                "accountId": "2391177777826126",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665744295",
+                            "availableUntil": "1667472295"
+                        },
+                        {
+                            "id": "1365284153",
+                            "type": "dailyGift",
+                            "senderId": "12318025",
+                            "message": "",
+                            "params": {
+                                "accountId": "3250503471633296",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665745366",
+                            "availableUntil": "1667473366"
+                        },
+                        {
+                            "id": "1365299251",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 3000,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "3"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665747131",
+                            "availableUntil": "1666006331"
+                        },
+                        {
+                            "id": "1365358726",
+                            "type": "defence",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "coin": {
+                                    "1": 10
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665753846",
+                            "availableUntil": "0"
+                        },
+                        {
+                            "id": "1365361889",
+                            "type": "dailyGift",
+                            "senderId": "10373293",
+                            "message": "",
+                            "params": {
+                                "accountId": "10157342683112667",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665754221",
+                            "availableUntil": "1667482221"
+                        },
+                        {
+                            "id": "1365382024",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665756876",
+                            "availableUntil": "1668348876"
+                        },
+                        {
+                            "id": "1365382215",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665756890",
+                            "availableUntil": "1668348890"
+                        },
+                        {
+                            "id": "1365382456",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665756904",
+                            "availableUntil": "1668348904"
+                        },
+                        {
+                            "id": "1365382592",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665756921",
+                            "availableUntil": "1668348921"
+                        },
+                        {
+                            "id": "1365390740",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665758040",
+                            "availableUntil": "1668350040"
+                        },
+                        {
+                            "id": "1365390841",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665758058",
+                            "availableUntil": "1668350058"
+                        },
+                        {
+                            "id": "1365403391",
+                            "type": "dailyGift",
+                            "senderId": "10374918",
+                            "message": "",
+                            "params": {
+                                "accountId": "2510323782363210",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665759984",
+                            "availableUntil": "1667487984"
+                        },
+                        {
+                            "id": "1365406117",
+                            "type": "dailyGift",
+                            "senderId": "10520008",
+                            "message": "",
+                            "params": {
+                                "accountId": "10156382934966229",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665760429",
+                            "availableUntil": "1667488429"
+                        },
+                        {
+                            "id": "1365418601",
+                            "type": "dailyGift",
+                            "senderId": "10518943",
+                            "message": "",
+                            "params": {
+                                "accountId": "10207747525380974",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665762445",
+                            "availableUntil": "1667490445"
+                        },
+                        {
+                            "id": "1365424093",
+                            "type": "dailyGift",
+                            "senderId": "10378295",
+                            "message": "",
+                            "params": {
+                                "accountId": "1285758201563661",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665763334",
+                            "availableUntil": "1667491334"
+                        },
+                        {
+                            "id": "1365427794",
+                            "type": "dailyGift",
+                            "senderId": "12392676",
+                            "message": "",
+                            "params": {
+                                "accountId": "10157461740651029",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665763891",
+                            "availableUntil": "1667491891"
+                        },
+                        {
+                            "id": "1365433190",
+                            "type": "dailyGift",
+                            "senderId": "10373136",
+                            "message": "",
+                            "params": {
+                                "accountId": "2585629774827885",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665764891",
+                            "availableUntil": "1667492891"
+                        },
+                        {
+                            "id": "1365440253",
+                            "type": "dailyGift",
+                            "senderId": "11966775",
+                            "message": "",
+                            "params": {
+                                "accountId": "10207337783598933",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665766227",
+                            "availableUntil": "1667494227"
+                        },
+                        {
+                            "id": "1365441096",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 4500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "4"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665766405",
+                            "availableUntil": "1666025605"
+                        },
+                        {
+                            "id": "1365441461",
+                            "type": "dailyGift",
+                            "senderId": "12521640",
+                            "message": "",
+                            "params": {
+                                "accountId": "10210508615125843",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665766472",
+                            "availableUntil": "1667494472"
+                        },
+                        {
+                            "id": "1365455452",
+                            "type": "dailyGift",
+                            "senderId": "12393382",
+                            "message": "",
+                            "params": {
+                                "accountId": "105641317467015",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665769248",
+                            "availableUntil": "1667497248"
+                        },
+                        {
+                            "id": "1365481708",
+                            "type": "dailyGift",
+                            "senderId": "11620357",
+                            "message": "",
+                            "params": {
+                                "accountId": "10218824629748980",
+                                "fromClanmate": false
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665774892",
+                            "availableUntil": "1667502892"
+                        },
+                        {
+                            "id": "1365490313",
+                            "type": "dailyGift",
+                            "senderId": "10373226",
+                            "message": "",
+                            "params": {
+                                "accountId": "2357844987583951",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665777097",
+                            "availableUntil": "1667505097"
+                        },
+                        {
+                            "id": "1365492698",
+                            "type": "clanGiftOldHero",
+                            "senderId": "10373226",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 500000,
+                                "consumable": {
+                                    "280": "5"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665777739",
+                            "availableUntil": "1668369739"
+                        },
+                        {
+                            "id": "1365498198",
+                            "type": "dailyGift",
+                            "senderId": "10373342",
+                            "message": "",
+                            "params": {
+                                "accountId": "10214533647601284",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665779062",
+                            "availableUntil": "1667507062"
+                        },
+                        {
+                            "id": "1365500570",
+                            "type": "dailyGift",
+                            "senderId": "10373122",
+                            "message": "",
+                            "params": {
+                                "accountId": "3271174336226106",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665779744",
+                            "availableUntil": "1667507744"
+                        },
+                        {
+                            "id": "1365545396",
+                            "type": "clanWarDaily",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "result": "win",
+                                "isChampion": false,
+                                "points": "1340",
+                                "enemyPoints": "1140",
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters",
+                                "enemyClanId": "41306",
+                                "enemyClanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 1,
+                                    "flagShape": 14,
+                                    "iconColor": 3,
+                                    "iconShape": 3
+                                },
+                                "enemyClanTitle": "Rune Runners"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "103": "20"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665788704",
+                            "availableUntil": "1666047904"
+                        },
+                        {
+                            "id": "1365551074",
+                            "type": "clanWarWeekly",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "division": 1,
+                                "league": "1",
+                                "position": 1,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "101": "200",
+                                    "102": "150",
+                                    "103": "60"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665788704",
+                            "availableUntil": "1666047904"
+                        },
+                        {
+                            "id": "1365651368",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 7500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "5"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665789187",
+                            "availableUntil": "1666048387"
+                        },
+                        {
+                            "id": "1365660420",
+                            "type": "dailyGift",
+                            "senderId": "12480625",
+                            "message": "",
+                            "params": {
+                                "accountId": "2865455913470549",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665792398",
+                            "availableUntil": "1667520398"
+                        },
+                        {
+                            "id": "1365714237",
+                            "type": "dailyGift",
+                            "senderId": "12521602",
+                            "message": "",
+                            "params": {
+                                "accountId": "10200256515394275",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665806953",
+                            "availableUntil": "1667534953"
+                        },
+                        {
+                            "id": "1365716308",
+                            "type": "dailyGift",
+                            "senderId": "12320571",
+                            "message": "",
+                            "params": {
+                                "accountId": "3342831222400271",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665807384",
+                            "availableUntil": "1667535384"
+                        },
+                        {
+                            "id": "1365736951",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12480625",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665810734",
+                            "availableUntil": "1668402734"
+                        },
+                        {
+                            "id": "1365774457",
+                            "type": "dailyGift",
+                            "senderId": "10373155",
+                            "message": "",
+                            "params": {
+                                "accountId": "2383049821782868",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665815119",
+                            "availableUntil": "1667543119"
+                        },
+                        {
+                            "id": "1365784549",
+                            "type": "dailyGift",
+                            "senderId": "12521680",
+                            "message": "",
+                            "params": {
+                                "accountId": "10155013283229404",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665816269",
+                            "availableUntil": "1667544269"
+                        },
+                        {
+                            "id": "1365786027",
+                            "type": "dailyGift",
+                            "senderId": "12525915",
+                            "message": "",
+                            "params": {
+                                "accountId": "2787730301452315",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665816448",
+                            "availableUntil": "1667544448"
+                        },
+                        {
+                            "id": "1365794994",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 12500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "4"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665817548",
+                            "availableUntil": "1666076748"
+                        },
+                        {
+                            "id": "1365795896",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12525915",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665817652",
+                            "availableUntil": "1668409652"
+                        },
+                        {
+                            "id": "1365797742",
+                            "type": "dailyGift",
+                            "senderId": "12520116",
+                            "message": "",
+                            "params": {
+                                "accountId": "3094733463874960",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665817866",
+                            "availableUntil": "1667545866"
+                        },
+                        {
+                            "id": "1365798685",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 750,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "1"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665817997",
+                            "availableUntil": "1666077197"
+                        },
+                        {
+                            "id": "1365809254",
+                            "type": "dailyGift",
+                            "senderId": "12527339",
+                            "message": "",
+                            "params": {
+                                "accountId": "2344029238965693",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665819285",
+                            "availableUntil": "1667547285"
+                        },
+                        {
+                            "id": "1365810390",
+                            "type": "dailyGift",
+                            "senderId": "12318025",
+                            "message": "",
+                            "params": {
+                                "accountId": "3250503471633296",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665819415",
+                            "availableUntil": "1667547415"
+                        },
+                        {
+                            "id": "1365824521",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 1800,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665821270",
+                            "availableUntil": "1666080470"
+                        },
+                        {
+                            "id": "1365828533",
+                            "type": "defence",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "coin": {
+                                    "1": 10
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665821777",
+                            "availableUntil": "0"
+                        },
+                        {
+                            "id": "1365837598",
+                            "type": "dailyGift",
+                            "senderId": "12394201",
+                            "message": "",
+                            "params": {
+                                "accountId": "928300674264231",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665823023",
+                            "availableUntil": "1667551023"
+                        },
+                        {
+                            "id": "1365846726",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 3000,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "3"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665824385",
+                            "availableUntil": "1666083585"
+                        },
+                        {
+                            "id": "1365859929",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 27500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "5"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665826300",
+                            "availableUntil": "1666085500"
+                        },
+                        {
+                            "id": "1365860601",
+                            "type": "dailyGift",
+                            "senderId": "10373247",
+                            "message": "",
+                            "params": {
+                                "accountId": "481169009354372",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665826398",
+                            "availableUntil": "1667554398"
+                        },
+                        {
+                            "id": "1365861212",
+                            "type": "dailyGift",
+                            "senderId": "10374918",
+                            "message": "",
+                            "params": {
+                                "accountId": "2510323782363210",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665826514",
+                            "availableUntil": "1667554514"
+                        },
+                        {
+                            "id": "1365883968",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 4500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "4"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665829660",
+                            "availableUntil": "1666088860"
+                        },
+                        {
+                            "id": "1365885230",
+                            "type": "defence",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "coin": {
+                                    "1": 10
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665829840",
+                            "availableUntil": "0"
+                        },
+                        {
+                            "id": "1365890389",
+                            "type": "dailyGift",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": {
+                                "accountId": "2391177777826126",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665830566",
+                            "availableUntil": "1667558566"
+                        },
+                        {
+                            "id": "1365929275",
+                            "type": "dailyGift",
+                            "senderId": "12521602",
+                            "message": "",
+                            "params": {
+                                "accountId": "10200256515394275",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665835592",
+                            "availableUntil": "1667563592"
+                        },
+                        {
+                            "id": "1365950731",
+                            "type": "dailyGift",
+                            "senderId": "12319854",
+                            "message": "",
+                            "params": {
+                                "accountId": "10221899976633752",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665838246",
+                            "availableUntil": "1667566246"
+                        },
+                        {
+                            "id": "1365955213",
+                            "type": "defence",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "coin": {
+                                    "1": 10
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665838849",
+                            "availableUntil": "0"
+                        },
+                        {
+                            "id": "1365988973",
+                            "type": "dailyGift",
+                            "senderId": "10518943",
+                            "message": "",
+                            "params": {
+                                "accountId": "10207747525380974",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665843350",
+                            "availableUntil": "1667571350"
+                        },
+                        {
+                            "id": "1365999021",
+                            "type": "dailyGift",
+                            "senderId": "12318067",
+                            "message": "",
+                            "params": {
+                                "accountId": "2544981769110620",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665844584",
+                            "availableUntil": "1667572584"
+                        },
+                        {
+                            "id": "1366009584",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665846139",
+                            "availableUntil": "1668438139"
+                        },
+                        {
+                            "id": "1366009747",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665846159",
+                            "availableUntil": "1668438159"
+                        },
+                        {
+                            "id": "1366011064",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665846330",
+                            "availableUntil": "1668438330"
+                        },
+                        {
+                            "id": "1366011204",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12527223",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665846349",
+                            "availableUntil": "1668438349"
+                        },
+                        {
+                            "id": "1366023090",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 45000,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "6"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665848086",
+                            "availableUntil": "1666107286"
+                        },
+                        {
+                            "id": "1366027054",
+                            "type": "dailyGift",
+                            "senderId": "10373122",
+                            "message": "",
+                            "params": {
+                                "accountId": "3271174336226106",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665848680",
+                            "availableUntil": "1667576680"
+                        },
+                        {
+                            "id": "1366033430",
+                            "type": "dailyGift",
+                            "senderId": "10373136",
+                            "message": "",
+                            "params": {
+                                "accountId": "2585629774827885",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665849618",
+                            "availableUntil": "1667577618"
+                        },
+                        {
+                            "id": "1366040397",
+                            "type": "dailyGift",
+                            "senderId": "12392676",
+                            "message": "",
+                            "params": {
+                                "accountId": "10157461740651029",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665850708",
+                            "availableUntil": "1667578708"
+                        },
+                        {
+                            "id": "1366043944",
+                            "type": "dailyGift",
+                            "senderId": "10520008",
+                            "message": "",
+                            "params": {
+                                "accountId": "10156382934966229",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665851344",
+                            "availableUntil": "1667579344"
+                        },
+                        {
+                            "id": "1366044593",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12394201",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665851466",
+                            "availableUntil": "1668443466"
+                        },
+                        {
+                            "id": "1366044766",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12394201",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665851505",
+                            "availableUntil": "1668443505"
+                        },
+                        {
+                            "id": "1366045125",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12394201",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665851585",
+                            "availableUntil": "1668443585"
+                        },
+                        {
+                            "id": "1366051811",
+                            "type": "dailyGift",
+                            "senderId": "12521680",
+                            "message": "",
+                            "params": {
+                                "accountId": "10155013283229404",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665852815",
+                            "availableUntil": "1667580815"
+                        },
+                        {
+                            "id": "1366057167",
+                            "type": "dailyGift",
+                            "senderId": "12521640",
+                            "message": "",
+                            "params": {
+                                "accountId": "10210508615125843",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665853843",
+                            "availableUntil": "1667581843"
+                        },
+                        {
+                            "id": "1366058237",
+                            "type": "grandDefence",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "coin": {
+                                    "2": 10
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665854103",
+                            "availableUntil": "0"
+                        },
+                        {
+                            "id": "1366062234",
+                            "type": "artifactCoinsSubscription",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "coin": {
+                                    "14": 3700
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665854920",
+                            "availableUntil": "0"
+                        },
+                        {
+                            "id": "1366065442",
+                            "type": "clanGiftOldHero",
+                            "senderId": "12520116",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "gold": 100000,
+                                "consumable": {
+                                    "280": "2"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665855637",
+                            "availableUntil": "1668447637"
+                        },
+                        {
+                            "id": "1366074346",
+                            "type": "clanDungeonActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 7500,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "coin": {
+                                    "13": "5"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665857595",
+                            "availableUntil": "1666116795"
+                        },
+                        {
+                            "id": "1366076657",
+                            "type": "dailyGift",
+                            "senderId": "10378295",
+                            "message": "",
+                            "params": {
+                                "accountId": "1285758201563661",
+                                "fromClanmate": true
+                            },
+                            "reward": {
+                                "coin": {
+                                    "6": 30
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665858142",
+                            "availableUntil": "1667586142"
+                        },
+                        {
+                            "id": "1366078456",
+                            "type": "clanActivity",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": {
+                                "points": 65000,
+                                "clanId": "69612",
+                                "clanIcon": {
+                                    "flagColor1": 7,
+                                    "flagColor2": 7,
+                                    "flagShape": 8,
+                                    "iconColor": 0,
+                                    "iconShape": 43
+                                },
+                                "clanTitle": "God Eaters"
+                            },
+                            "reward": {
+                                "consumable": {
+                                    "4": "7"
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665858568",
+                            "availableUntil": "1666117768"
+                        },
+                        {
+                            "id": "1366079903",
+                            "type": "grandDefence",
+                            "senderId": "-309",
+                            "message": "",
+                            "params": [],
+                            "reward": {
+                                "coin": {
+                                    "2": 10
+                                }
+                            },
+                            "read": "0",
+                            "ctime": "1665858963",
+                            "availableUntil": "0"
+                        }
+                    ],
+                    "users": {
+                        "10373122": {
+                            "id": "10373122",
+                            "name": "Russell",
+                            "lastLoginTime": "1665848667",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "382",
+                            "isChatModerator": false,
+                            "frameId": 73,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "3271174336226106",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10373136": {
+                            "id": "10373136",
+                            "name": "BBM SARAH DU30",
+                            "lastLoginTime": "1665849596",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "909",
+                            "isChatModerator": false,
+                            "frameId": 67,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2585629774827885",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10373155": {
+                            "id": "10373155",
+                            "name": "GE Parsival",
+                            "lastLoginTime": "1665847040",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "839",
+                            "isChatModerator": false,
+                            "frameId": 67,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2383049821782868",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10373226": {
+                            "id": "10373226",
+                            "name": "Ben",
+                            "lastLoginTime": "1665833559",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "661",
+                            "isChatModerator": false,
+                            "frameId": 57,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2357844987583951",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10373247": {
+                            "id": "10373247",
+                            "name": "VSK[Y]",
+                            "lastLoginTime": "1665853829",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "506",
+                            "isChatModerator": false,
+                            "frameId": 51,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "481169009354372",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10373293": {
+                            "id": "10373293",
+                            "name": "Teghy",
+                            "lastLoginTime": "1665810970",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "1033",
+                            "isChatModerator": false,
+                            "frameId": 41,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10157342683112667",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10373342": {
+                            "id": "10373342",
+                            "name": "Matt(Dirty Pig)",
+                            "lastLoginTime": "1665810480",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "459",
+                            "isChatModerator": false,
+                            "frameId": 23,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10214533647601284",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10374918": {
+                            "id": "10374918",
+                            "name": "MexiPig",
+                            "lastLoginTime": "1665849508",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "2",
+                            "avatarId": "371",
+                            "isChatModerator": false,
+                            "frameId": 77,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2510323782363210",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10378295": {
+                            "id": "10378295",
+                            "name": "Kari",
+                            "lastLoginTime": "1665857124",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "333",
+                            "isChatModerator": false,
+                            "frameId": 88,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "1285758201563661",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10518943": {
+                            "id": "10518943",
+                            "name": "Light",
+                            "lastLoginTime": "1665844160",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "894",
+                            "isChatModerator": false,
+                            "frameId": 57,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10207747525380974",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "10520008": {
+                            "id": "10520008",
+                            "name": "OnePunchMan",
+                            "lastLoginTime": "1665859947",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "1047",
+                            "isChatModerator": false,
+                            "frameId": 76,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10156382934966229",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "11966775": {
+                            "id": "11966775",
+                            "name": "Brian",
+                            "lastLoginTime": "1665770164",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "22",
+                            "isChatModerator": false,
+                            "frameId": 41,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10207337783598933",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12318025": {
+                            "id": "12318025",
+                            "name": "UseStolenInfo",
+                            "lastLoginTime": "1665820149",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "1008",
+                            "isChatModerator": false,
+                            "frameId": 67,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "3250503471633296",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12318067": {
+                            "id": "12318067",
+                            "name": "Pig Andy",
+                            "lastLoginTime": "1665844555",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "2",
+                            "avatarId": "999",
+                            "isChatModerator": false,
+                            "frameId": 65,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2544981769110620",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12319854": {
+                            "id": "12319854",
+                            "name": "RankPig",
+                            "lastLoginTime": "1665838135",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "24",
+                            "isChatModerator": false,
+                            "frameId": 57,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10221899976633752",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12320571": {
+                            "id": "12320571",
+                            "name": "Piggy Bank",
+                            "lastLoginTime": "1665857556",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "309",
+                            "isChatModerator": false,
+                            "frameId": 12,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "3342831222400271",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12392676": {
+                            "id": "12392676",
+                            "name": "Just",
+                            "lastLoginTime": "1665850989",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "499",
+                            "isChatModerator": false,
+                            "frameId": 48,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10157461740651029",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12393382": {
+                            "id": "12393382",
+                            "name": "Kari2",
+                            "lastLoginTime": "1665859893",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "391",
+                            "isChatModerator": false,
+                            "frameId": 62,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "105641317467015",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12394201": {
+                            "id": "12394201",
+                            "name": "Dax",
+                            "lastLoginTime": "1665850093",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "907",
+                            "isChatModerator": false,
+                            "frameId": 41,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "928300674264231",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12480625": {
+                            "id": "12480625",
+                            "name": "XLiang",
+                            "lastLoginTime": "1665857325",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "1036",
+                            "isChatModerator": false,
+                            "frameId": 41,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2865455913470549",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12520116": {
+                            "id": "12520116",
+                            "name": "King Arthur ",
+                            "lastLoginTime": "1665857649",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "1046",
+                            "isChatModerator": false,
+                            "frameId": 72,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "3094733463874960",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12521602": {
+                            "id": "12521602",
+                            "name": "CaffeinatedPig",
+                            "lastLoginTime": "1665846251",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "703",
+                            "isChatModerator": false,
+                            "frameId": 41,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10200256515394275",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12521640": {
+                            "id": "12521640",
+                            "name": "Hiro Nakamura",
+                            "lastLoginTime": "1665853754",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "715",
+                            "isChatModerator": false,
+                            "frameId": 41,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10210508615125843",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12521680": {
+                            "id": "12521680",
+                            "name": "Cookie Pig ",
+                            "lastLoginTime": "1665852600",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "65",
+                            "isChatModerator": false,
+                            "frameId": 37,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10155013283229404",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12525915": {
+                            "id": "12525915",
+                            "name": "Hase-Hasi",
+                            "lastLoginTime": "1665848903",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "886",
+                            "isChatModerator": false,
+                            "frameId": 74,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2787730301452315",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12527223": {
+                            "id": "12527223",
+                            "name": "Nocash",
+                            "lastLoginTime": "1665855817",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "165",
+                            "isChatModerator": false,
+                            "frameId": 88,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2391177777826126",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "12527339": {
+                            "id": "12527339",
+                            "name": "God Eater",
+                            "lastLoginTime": "1665855873",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69612",
+                            "clanRole": "4",
+                            "avatarId": "1003",
+                            "isChatModerator": false,
+                            "frameId": 77,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "2344029238965693",
+                            "clanTitle": "God Eaters",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 7,
+                                "flagShape": 8,
+                                "iconColor": 0,
+                                "iconShape": 43
+                            }
+                        },
+                        "11620357": {
+                            "id": "11620357",
+                            "name": "Pheegs",
+                            "lastLoginTime": "1665810023",
+                            "serverId": "32",
+                            "level": "130",
+                            "clanId": "43222",
+                            "clanRole": "4",
+                            "avatarId": "561",
+                            "isChatModerator": false,
+                            "frameId": 64,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "accountId": "10218824629748980",
+                            "clanTitle": "The Expendables",
+                            "clanIcon": {
+                                "flagColor1": 7,
+                                "flagColor2": 0,
+                                "flagShape": 5,
+                                "iconColor": 19,
+                                "iconShape": 5
+                            }
+                        },
+                        "-309": {
+                            "id": -309,
+                            "name": "T_NICKNAME_309",
+                            "avatarId": 483,
+                            "experience": 68985,
+                            "level": 80
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

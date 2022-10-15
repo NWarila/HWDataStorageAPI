@@ -1,0 +1,298 @@
+<# Important Notes (Category: Player Information)                                                              |
+    This API is loaded when a player who has the extension installed loads the game. It's in game
+    purpose is to provide the game client with the users pet patronages. This API should be tracked
+    on a per player database so we can query what a users current 'X' defense is. Using this info
+    combined with they players current hero and pet information we should be able to craft a defense
+    team to test against.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1. Please note most data is stripped out.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665860107.049939,
+    'id':'teamGetFavor',
+    'Args': '',
+    'Request': '{"calls": [{"name": "teamGetFavor","args": {},"ident": "teamGetFavor"}]}',
+    'Body': {
+        "arena_def": {
+            "23": 6003,
+            "36": 6007,
+            "40": 6004,
+            "46": 6006,
+            "50": 6005
+        },
+        "grand_def": {
+            "9": 6006,
+            "12": 6003,
+            "16": 6004,
+            "29": 6002,
+            "36": 6007,
+            "42": 6005,
+            "48": 6000,
+            "55": 6001
+        },
+        "clanDefence_heroes": {
+            "13": 6003,
+            "16": 6004,
+            "24": 6001,
+            "29": 6002,
+            "37": 6005
+        },
+        "crossClanDefence_heroes": {
+            "9": 6005,
+            "16": 6004,
+            "23": 6008,
+            "29": 6002,
+            "36": 6007,
+            "42": 6006,
+            "52": 6003,
+            "55": 6001
+        }
+    }
+}
+
+# Full API response
+{
+    "date": 1665860107.049939,
+    "results": [
+        {
+            "ident": "teamGetFavor",
+            "result": {
+                "response": {
+                    "arena_def": {
+                        "23": 6003,
+                        "36": 6007,
+                        "40": 6004,
+                        "46": 6006,
+                        "50": 6005
+                    },
+                    "arena": {
+                        "16": 6004,
+                        "23": 6003,
+                        "29": 6002,
+                        "51": 6001,
+                        "55": 6005
+                    },
+                    "grand_def": {
+                        "9": 6006,
+                        "12": 6003,
+                        "16": 6004,
+                        "29": 6002,
+                        "36": 6007,
+                        "42": 6005,
+                        "48": 6000,
+                        "55": 6001
+                    },
+                    "grand": {
+                        "12": 6003,
+                        "16": 6004,
+                        "23": 6007,
+                        "32": 6002,
+                        "46": 6006,
+                        "47": 6001,
+                        "49": 6000,
+                        "55": 6005
+                    },
+                    "__legacy": [],
+                    "challenge": null,
+                    "adventure_hero": {
+                        "7": 6002,
+                        "12": 6003,
+                        "13": 6008,
+                        "16": 6004,
+                        "55": 6005
+                    },
+                    "dungeon_hero": {
+                        "3": 6005,
+                        "10": 6002,
+                        "13": 6003,
+                        "16": 6004
+                    },
+                    "dungeon_earth": null,
+                    "dungeon_neutral": null,
+                    "dungeon_water": null,
+                    "dungeon_fire": null,
+                    "clan_pvp_hero": {
+                        "13": 6008,
+                        "16": 6004,
+                        "46": 6006,
+                        "52": 6001,
+                        "55": 6005
+                    },
+                    "clanRaid_nodes": {
+                        "24": 6001,
+                        "37": 6000
+                    },
+                    "clan_pvp_titan": null,
+                    "brawl_def": {
+                        "29": 6002,
+                        "55": 6005,
+                        "16": 6004,
+                        "42": 6001
+                    },
+                    "mission": {
+                        "3": 6000,
+                        "40": 6004,
+                        "43": 6002,
+                        "46": 6006,
+                        "48": 6001
+                    },
+                    "brawl": {
+                        "55": 6007,
+                        "17": 6002,
+                        "48": 6000,
+                        "52": 6003,
+                        "16": 6004
+                    },
+                    "titan_arena_def": null,
+                    "titan_arena": null,
+                    "clanDefence_heroes": {
+                        "13": 6003,
+                        "16": 6004,
+                        "24": 6001,
+                        "29": 6002,
+                        "37": 6005
+                    },
+                    "invasion_boss_92": {
+                        "9": 6005,
+                        "16": 6004,
+                        "29": 6002,
+                        "48": 6001
+                    },
+                    "invasion_boss_93": {
+                        "9": 6005,
+                        "16": 6000,
+                        "29": 6002,
+                        "40": 6004,
+                        "48": 6001
+                    },
+                    "invasion_boss_94": {
+                        "9": 6007,
+                        "16": 6004,
+                        "29": 6002,
+                        "48": 6005
+                    },
+                    "invasion_boss_95": {
+                        "9": 6007,
+                        "16": 6004,
+                        "29": 6002,
+                        "48": 6005
+                    },
+                    "invasion_boss_96": {
+                        "9": 6005,
+                        "16": 6000,
+                        "40": 6004
+                    },
+                    "invasion_boss_97": {
+                        "9": 6005,
+                        "16": 6004
+                    },
+                    "invasion_boss_98": {
+                        "9": 6005,
+                        "16": 6004
+                    },
+                    "clanDefence_titans": [],
+                    "invasion_boss_85": {
+                        "16": 6000,
+                        "40": 6004
+                    },
+                    "invasion_boss_86": {
+                        "16": 6000,
+                        "40": 6004
+                    },
+                    "invasion_boss_87": {
+                        "16": 6004
+                    },
+                    "invasion_boss_88": {
+                        "16": 6004
+                    },
+                    "invasion_boss_89": {
+                        "16": 6004
+                    },
+                    "invasion_boss_90": {
+                        "12": 6003,
+                        "13": 6008,
+                        "16": 6004,
+                        "29": 6002,
+                        "55": 6005
+                    },
+                    "invasion_boss_91": {
+                        "9": 6005,
+                        "16": 6004,
+                        "29": 6002,
+                        "48": 6001
+                    },
+                    "invasion_boss_99": {
+                        "16": 6000,
+                        "40": 6004
+                    },
+                    "invasion_boss_100": {
+                        "3": 6005,
+                        "10": 6002,
+                        "13": 6008,
+                        "16": 6004
+                    },
+                    "invasion_boss_101": {
+                        "13": 6006,
+                        "16": 6000,
+                        "24": 6001,
+                        "29": 6002,
+                        "48": 6005
+                    },
+                    "invasion_boss_102": {
+                        "13": 6006,
+                        "16": 6000,
+                        "24": 6001,
+                        "29": 6002,
+                        "48": 6005
+                    },
+                    "invasion_boss_103": {
+                        "13": 6006,
+                        "16": 6000,
+                        "24": 6001,
+                        "29": 6002,
+                        "48": 6005
+                    },
+                    "invasion_boss_104": {
+                        "16": 6000,
+                        "40": 6004
+                    },
+                    "invasion_boss_105": {
+                        "9": 6005,
+                        "16": 6000,
+                        "24": 6001,
+                        "40": 6004
+                    },
+                    "crossClanDefence_heroes": {
+                        "9": 6005,
+                        "16": 6004,
+                        "23": 6008,
+                        "29": 6002,
+                        "36": 6007,
+                        "42": 6006,
+                        "52": 6003,
+                        "55": 6001
+                    },
+                    "clan_global_pvp": {
+                        "1": 6004,
+                        "12": 6003,
+                        "13": 6007,
+                        "32": 6006,
+                        "43": 6002
+                    },
+                    "challenge_titan": null
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,856 @@
+<# Important Notes (Category: Player Information)                                                              |
+    This API is loaded when a player who has the extension installed loads the game. It's in game
+    purpose is to provide the game client with the users currently set defense. This API should be
+    tracked on a per player database so we can query what a users current 'X' defense is. Using this
+    info combined with they players current hero and pet information we should be able to craft a defense
+    team to test against.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1. Please note most data is stripped out.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665860107.049939,
+    'id':'teamGetAll',
+    'Args': '',
+    'Request': '{"calls": [{"name": "teamGetAll","args": {},"ident": "teamGetAll"}]}',
+    'Body': {
+        "arena": [
+            29,
+            23,
+            55,
+            51,
+            16,
+            6006
+        ],
+        "clanDefence_heroes": [
+            29,
+            13,
+            37,
+            16,
+            24,
+            6006
+        ],
+        "clanDefence_titans": [
+            4012,
+            4013,
+            4031,
+            4032,
+            4010
+        ],
+        "grand": [
+            [
+                12,
+                40,
+                4,
+                32,
+                23,
+                6006
+            ],
+            [
+                16,
+                48,
+                29,
+                51,
+                55,
+                6004
+            ],
+            [
+                52,
+                46,
+                47,
+                31,
+                49,
+                6005
+            ]
+        ],
+        "crossClanDefence_heroes": [
+            [
+                16,
+                55,
+                23,
+                48,
+                31,
+                6006
+            ],
+            [
+                36,
+                9,
+                42,
+                29,
+                52,
+                6005
+            ],
+            [
+                41
+            ]
+        ],
+        "crossClanDefence_titans": [
+            [
+                4020,
+                4021,
+                4022,
+                4023,
+                4013
+            ],
+            [
+                4000,
+                4002,
+                4003,
+                4031,
+                4001
+            ]
+        ]
+    }
+}
+
+# Full API response
+{
+    "date": 1665860107.049939,
+    "results": [
+        {
+            "ident": "teamGetAll",
+            "result": {
+                "response": {
+                    "mission": [
+                        46,
+                        48,
+                        40,
+                        43,
+                        3,
+                        6004
+                    ],
+                    "arena": [
+                        29,
+                        23,
+                        55,
+                        51,
+                        16,
+                        6006
+                    ],
+                    "dungeon_fire": [
+                        4012,
+                        4013,
+                        4011,
+                        4010
+                    ],
+                    "dungeon_hero": [
+                        10,
+                        13,
+                        40,
+                        3,
+                        16,
+                        6004
+                    ],
+                    "dungeon_neutral": [
+                        4003,
+                        4013,
+                        4002,
+                        4001,
+                        4000
+                    ],
+                    "dungeon_water": [
+                        4003,
+                        4002,
+                        4001,
+                        4000
+                    ],
+                    "dungeon_earth": [
+                        4021,
+                        4023,
+                        4022,
+                        4020
+                    ],
+                    "titan_arena_def": [
+                        4012,
+                        4003,
+                        4013,
+                        4020,
+                        4010
+                    ],
+                    "titan_arena": [
+                        4003,
+                        4013,
+                        4002,
+                        4001,
+                        4000
+                    ],
+                    "clanDefence_heroes": [
+                        29,
+                        13,
+                        37,
+                        16,
+                        24,
+                        6006
+                    ],
+                    "clanDefence_titans": [
+                        4012,
+                        4013,
+                        4031,
+                        4032,
+                        4010
+                    ],
+                    "grand": [
+                        [
+                            12,
+                            40,
+                            4,
+                            32,
+                            23,
+                            6006
+                        ],
+                        [
+                            16,
+                            48,
+                            29,
+                            51,
+                            55,
+                            6004
+                        ],
+                        [
+                            52,
+                            46,
+                            47,
+                            31,
+                            49,
+                            6005
+                        ]
+                    ],
+                    "tower": [
+                        46,
+                        40,
+                        41,
+                        4,
+                        24
+                    ],
+                    "boss_12": [
+                        40,
+                        49,
+                        47,
+                        42,
+                        24,
+                        6004
+                    ],
+                    "boss_11": [
+                        46,
+                        31,
+                        48,
+                        37,
+                        3,
+                        6001
+                    ],
+                    "boss_10": [
+                        29,
+                        33,
+                        13,
+                        34,
+                        4,
+                        6001
+                    ],
+                    "clan_pvp_hero": [
+                        46,
+                        55,
+                        13,
+                        52,
+                        16,
+                        6006
+                    ],
+                    "clan_pvp_titan": [
+                        4021,
+                        4003,
+                        4023,
+                        4022,
+                        4020
+                    ],
+                    "challenge": [
+                        4032
+                    ],
+                    "adventure_hero": [
+                        7,
+                        55,
+                        13,
+                        16,
+                        12,
+                        6006
+                    ],
+                    "titan_mission": [
+                        4003,
+                        4013,
+                        4002,
+                        4001,
+                        4000
+                    ],
+                    "invasion_boss_34": [
+                        31,
+                        48,
+                        40,
+                        3,
+                        4,
+                        6001
+                    ],
+                    "invasion_boss_36": [
+                        31,
+                        48,
+                        40,
+                        3,
+                        4,
+                        6001
+                    ],
+                    "invasion_boss_38": [
+                        46,
+                        33,
+                        13,
+                        37,
+                        34,
+                        6001
+                    ],
+                    "invasion_boss_39": [
+                        46,
+                        33,
+                        34,
+                        47,
+                        4
+                    ],
+                    "invasion_boss_43": [
+                        46,
+                        32,
+                        29,
+                        13,
+                        4,
+                        6002
+                    ],
+                    "invasion_boss_44": [
+                        46,
+                        32,
+                        29,
+                        13,
+                        4,
+                        6001
+                    ],
+                    "invasion_boss_45": [
+                        46,
+                        32,
+                        29,
+                        13,
+                        4,
+                        6002
+                    ],
+                    "invasion_boss_46": [
+                        29,
+                        33,
+                        48,
+                        34,
+                        47,
+                        6001
+                    ],
+                    "invasion_boss_47": [
+                        32,
+                        29,
+                        33,
+                        34,
+                        47,
+                        6002
+                    ],
+                    "invasion_boss_48": [
+                        32,
+                        29,
+                        33,
+                        34,
+                        47,
+                        6002
+                    ],
+                    "invasion_boss_49": [
+                        33,
+                        40,
+                        37,
+                        34,
+                        24,
+                        6001
+                    ],
+                    "invasion_boss_50": [
+                        48,
+                        52,
+                        43,
+                        16,
+                        47,
+                        6006
+                    ],
+                    "invasion_boss_51": [
+                        32,
+                        13,
+                        48,
+                        43,
+                        1,
+                        6006
+                    ],
+                    "invasion_boss_52": [
+                        32,
+                        13,
+                        37,
+                        43,
+                        1,
+                        6006
+                    ],
+                    "invasion_boss_53": [
+                        32,
+                        52,
+                        43,
+                        16,
+                        1,
+                        6006
+                    ],
+                    "invasion_boss_54": [
+                        46,
+                        32,
+                        13,
+                        43,
+                        1,
+                        6003
+                    ],
+                    "invasion_boss_55": [
+                        48,
+                        52,
+                        43,
+                        16,
+                        1,
+                        6006
+                    ],
+                    "invasion_boss_56": [
+                        46,
+                        33,
+                        48,
+                        43,
+                        34,
+                        6006
+                    ],
+                    "invasion_boss_57": [
+                        46,
+                        31,
+                        9,
+                        40,
+                        16,
+                        6001
+                    ],
+                    "invasion_boss_58": [
+                        46,
+                        31,
+                        48,
+                        40,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_59": [
+                        32,
+                        9,
+                        48,
+                        52,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_60": [
+                        46,
+                        9,
+                        48,
+                        52,
+                        16,
+                        6001
+                    ],
+                    "invasion_boss_61": [
+                        32,
+                        33,
+                        52,
+                        34,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_62": [
+                        32,
+                        29,
+                        9,
+                        52,
+                        16,
+                        6001
+                    ],
+                    "invasion_boss_63": [
+                        33,
+                        48,
+                        34,
+                        16,
+                        1,
+                        6005
+                    ],
+                    "invasion_boss_64": [
+                        33,
+                        48,
+                        43,
+                        34,
+                        1,
+                        6006
+                    ],
+                    "invasion_boss_65": [
+                        33,
+                        37,
+                        34,
+                        36,
+                        1
+                    ],
+                    "invasion_boss_66": [
+                        33,
+                        9,
+                        16,
+                        36,
+                        1,
+                        6006
+                    ],
+                    "invasion_boss_67": [
+                        33,
+                        48,
+                        43,
+                        34,
+                        1
+                    ],
+                    "invasion_boss_68": [
+                        29,
+                        9,
+                        48,
+                        43,
+                        16,
+                        6005
+                    ],
+                    "invasion_boss_69": [
+                        33,
+                        48,
+                        43,
+                        34,
+                        1
+                    ],
+                    "invasion_boss_70": [
+                        46,
+                        33,
+                        48,
+                        34,
+                        1,
+                        6006
+                    ],
+                    "invasion_boss_71": [
+                        22,
+                        13,
+                        3,
+                        12,
+                        36,
+                        6000
+                    ],
+                    "invasion_boss_72": [
+                        33,
+                        9,
+                        43,
+                        16,
+                        1
+                    ],
+                    "invasion_boss_73": [
+                        29,
+                        9,
+                        48,
+                        43,
+                        16,
+                        6005
+                    ],
+                    "invasion_boss_74": [
+                        32,
+                        43,
+                        16,
+                        36,
+                        24
+                    ],
+                    "invasion_boss_75": [
+                        29,
+                        33,
+                        43,
+                        16,
+                        24
+                    ],
+                    "invasion_boss_76": [
+                        46,
+                        32,
+                        13,
+                        40,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_77": [
+                        29,
+                        9,
+                        43,
+                        16,
+                        24
+                    ],
+                    "clanRaid_nodes": [
+                        [
+                            46,
+                            48,
+                            37,
+                            40,
+                            24,
+                            6005
+                        ],
+                        [
+                            34,
+                            33,
+                            1,
+                            43,
+                            35,
+                            6001
+                        ],
+                        [
+                            16,
+                            29,
+                            52,
+                            12,
+                            9,
+                            6006
+                        ]
+                    ],
+                    "invasion_boss_78": [
+                        31,
+                        9,
+                        48,
+                        40,
+                        16,
+                        6005
+                    ],
+                    "invasion_boss_79": [
+                        9,
+                        48,
+                        40,
+                        52,
+                        16
+                    ],
+                    "invasion_boss_80": [
+                        29,
+                        48,
+                        40,
+                        16,
+                        24
+                    ],
+                    "invasion_boss_81": [
+                        29,
+                        48,
+                        40,
+                        16,
+                        24
+                    ],
+                    "invasion_boss_82": [
+                        29,
+                        48,
+                        40,
+                        16,
+                        24
+                    ],
+                    "invasion_boss_83": [
+                        29,
+                        48,
+                        40,
+                        16,
+                        24
+                    ],
+                    "brawl": [
+                        55,
+                        17,
+                        48,
+                        52,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_92": [
+                        29,
+                        9,
+                        48,
+                        40,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_93": [
+                        29,
+                        9,
+                        48,
+                        40,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_94": [
+                        29,
+                        9,
+                        48,
+                        40,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_95": [
+                        29,
+                        9,
+                        48,
+                        40,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_96": [
+                        9,
+                        40,
+                        16
+                    ],
+                    "invasion_boss_97": [
+                        9,
+                        40,
+                        16
+                    ],
+                    "invasion_boss_98": [
+                        9,
+                        40,
+                        16
+                    ],
+                    "invasion_boss_85": [
+                        40,
+                        16
+                    ],
+                    "invasion_boss_86": [
+                        40,
+                        16
+                    ],
+                    "invasion_boss_87": [
+                        40,
+                        16
+                    ],
+                    "invasion_boss_88": [
+                        40,
+                        16
+                    ],
+                    "invasion_boss_89": [
+                        40,
+                        16
+                    ],
+                    "invasion_boss_90": [
+                        29,
+                        55,
+                        13,
+                        16,
+                        12,
+                        6006
+                    ],
+                    "invasion_boss_91": [
+                        29,
+                        9,
+                        48,
+                        40,
+                        16,
+                        6006
+                    ],
+                    "invasion_boss_99": [
+                        40,
+                        16
+                    ],
+                    "invasion_boss_100": [
+                        10,
+                        13,
+                        40,
+                        3,
+                        16,
+                        6004
+                    ],
+                    "invasion_boss_101": [
+                        29,
+                        13,
+                        48,
+                        16,
+                        24
+                    ],
+                    "invasion_boss_102": [
+                        29,
+                        13,
+                        48,
+                        16,
+                        24
+                    ],
+                    "invasion_boss_103": [
+                        29,
+                        13,
+                        48,
+                        16,
+                        24
+                    ],
+                    "invasion_boss_104": [
+                        40,
+                        16
+                    ],
+                    "invasion_boss_105": [
+                        9,
+                        48,
+                        40,
+                        16,
+                        24
+                    ],
+                    "crossClanDefence_heroes": [
+                        [
+                            16,
+                            55,
+                            23,
+                            48,
+                            31,
+                            6006
+                        ],
+                        [
+                            36,
+                            9,
+                            42,
+                            29,
+                            52,
+                            6005
+                        ],
+                        [
+                            41
+                        ]
+                    ],
+                    "crossClanDefence_titans": [
+                        [
+                            4020,
+                            4021,
+                            4022,
+                            4023,
+                            4013
+                        ],
+                        [
+                            4000,
+                            4002,
+                            4003,
+                            4031,
+                            4001
+                        ]
+                    ],
+                    "clan_global_pvp": [
+                        32,
+                        13,
+                        43,
+                        12,
+                        1,
+                        6006
+                    ],
+                    "challenge_titan": [
+                        4012,
+                        4023,
+                        4013,
+                        4011,
+                        4010
+                    ]
+                }
+            }
+        }
+    ]
+}

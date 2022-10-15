@@ -1,0 +1,200 @@
+<# Important Notes (Category: ClanRaid)                                                                          |
+    This API is called when a dungeon battle ends. Because the player hero and titan
+information was captured on the dungeonStartBattle repsonse this API serves no purpose.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1.
+
+#>
+
+# Request
+{
+    "calls": [
+        {
+            "name": "dungeonEndBattle",
+            "args": {
+                "result": {
+                    "win": true,
+                    "stars": 3
+                },
+                "progress": [
+                    {
+                        "v": 216,
+                        "b": 0,
+                        "seed": -1355813031,
+                        "attackers": {
+                            "input": [
+                                "auto",
+                                0,
+                                0,
+                                "auto",
+                                25,
+                                0.6479997634887695
+                            ],
+                            "heroes": {
+                                "3": {
+                                    "hp": 305957,
+                                    "energy": 1000,
+                                    "isDead": false
+                                },
+                                "10": {
+                                    "hp": 341267,
+                                    "energy": 100,
+                                    "isDead": false
+                                },
+                                "13": {
+                                    "hp": 385010,
+                                    "energy": 100,
+                                    "isDead": false
+                                },
+                                "16": {
+                                    "hp": 410248,
+                                    "energy": 808,
+                                    "isDead": false
+                                },
+                                "40": {
+                                    "hp": 510996,
+                                    "energy": 108,
+                                    "isDead": false
+                                },
+                                "6004": {
+                                    "hp": -1,
+                                    "energy": 775,
+                                    "isDead": false
+                                }
+                            }
+                        },
+                        "defenders": {
+                            "input": [],
+                            "heroes": {}
+                        }
+                    }
+                ]
+            },
+            "ident": "body"
+        }
+    ]
+}
+
+# Full API response
+{
+    "date": 1665876007.664511,
+    "results": [
+        {
+            "ident": "body",
+            "result": {
+                "response": {
+                    "reward": {
+                        "dungeonActivity": 1,
+                        "consumable": {
+                            "20": 25
+                        }
+                    },
+                    "rewardMultiplier": 1,
+                    "dungeon": {
+                        "userId": "12491146",
+                        "elements": {
+                            "prime": "earth",
+                            "nonprime": [
+                                "water",
+                                "fire"
+                            ]
+                        },
+                        "respawnFloor": "143631",
+                        "floorNumber": 143632,
+                        "floorType": "battle",
+                        "states": {
+                            "titans": []
+                        },
+                        "floor": {
+                            "userData": [
+                                {
+                                    "defenderType": "water",
+                                    "chance": 75,
+                                    "team": [
+                                        {
+                                            "id": 4000,
+                                            "level": 120,
+                                            "star": 6,
+                                            "buffs": {
+                                                "hp": 4485710.784313725,
+                                                "physicalAttack": 336428.3088235294
+                                            }
+                                        },
+                                        {
+                                            "id": 4002,
+                                            "level": 119,
+                                            "star": 6,
+                                            "buffs": {
+                                                "hp": 4485710.784313725,
+                                                "physicalAttack": 336428.3088235294
+                                            }
+                                        },
+                                        {
+                                            "id": 4003,
+                                            "level": 119,
+                                            "star": 6,
+                                            "buffs": {
+                                                "hp": 4485710.784313725,
+                                                "physicalAttack": 336428.3088235294
+                                            }
+                                        },
+                                        {
+                                            "id": 4001,
+                                            "level": 119,
+                                            "star": 6,
+                                            "buffs": {
+                                                "hp": 4485710.784313725,
+                                                "physicalAttack": 336428.3088235294
+                                            }
+                                        }
+                                    ],
+                                    "userId": -1003992,
+                                    "power": 396129,
+                                    "attackerType": "earth"
+                                }
+                            ],
+                            "defenders": [],
+                            "state": 1
+                        },
+                        "reward": [],
+                        "maxFloorReached": "143640"
+                    },
+                    "states": {
+                        "titans": []
+                    },
+                    "dungeonActivity": 8642
+                },
+                "quests": [
+                    {
+                        "id": 10021,
+                        "state": 1,
+                        "progress": 1,
+                        "reward": {
+                            "coin": {
+                                "13": 1
+                            }
+                        },
+                        "createTime": 1665839542
+                    },
+                    {
+                        "id": 10022,
+                        "state": 1,
+                        "progress": 1,
+                        "reward": {
+                            "coin": {
+                                "13": 2
+                            }
+                        },
+                        "createTime": 1665839542
+                    }
+                ]
+            }
+        }
+    ]
+}

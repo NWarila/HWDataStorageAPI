@@ -1,0 +1,52 @@
+<# Important Notes (Category: Replays)                                                                           |
+    This API is loaded when a player who has the extension installed loads the game. It's in game
+    purpose is to provide the game client with the users account information. This API tracks a users
+    artifact chest progress. No history information is needed for this so its should always just update
+    to whatever is the latest and greatest value is.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665860107.049939,
+    'id':'artifactGetChestLevel',
+    'Args': '',
+    'Request': '{"calls": [{"name": "artifactGetChestLevel","args": {},"ident": "artifactGetChestLevel"}]}',
+    'Body': {
+        "ident": "artifactGetChestLevel",
+        "result": {
+            "response": {
+                "level": 35,
+                "xp": 30221,
+                "starmoneySpent": 2865180
+            }
+        }
+    }
+}
+
+# Full API response
+{
+    "date": 1665860107.049939,
+    "results": [
+        {
+            "ident": "artifactGetChestLevel",
+            "result": {
+                "response": {
+                    "level": 35,
+                    "xp": 30221,
+                    "starmoneySpent": 2865180
+                }
+            }
+        }
+    ]
+}

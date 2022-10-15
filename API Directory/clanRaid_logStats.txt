@@ -1,0 +1,219 @@
+<# Important Notes (Category: ClanRaid)                                                                          |
+    This API is called, if its not already cached, when a player opens their guilds Asguard logs menu. This
+API specifically is a record of how much points each guild member contributed to the overall guild moral. I
+do not currently see a strong need to track this information.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1.
+
+#>
+
+# Request
+{
+    "calls": [
+        {
+            "name": "clanRaid_logStats",
+            "args": {},
+            "ident": "group_0_body"
+        }
+    ]
+}
+
+# Full API response
+{
+    "date": 1665873576.274366,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": {
+                    "10520008": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "12392676": {
+                        "bossDamage": "73928979",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 4
+                    },
+                    "10373293": {
+                        "bossDamage": "87739869",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 4
+                    },
+                    "12318067": {
+                        "bossDamage": "69723285",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 1
+                    },
+                    "10373247": {
+                        "bossDamage": "51180496",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 4
+                    },
+                    "12527339": {
+                        "bossDamage": "7800210",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 3
+                    },
+                    "12320571": {
+                        "bossDamage": "52285190",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 1
+                    },
+                    "12480625": {
+                        "bossDamage": "48506245",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "12319854": {
+                        "bossDamage": "66856730",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 1
+                    },
+                    "10518943": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "12318115": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "12520116": {
+                        "bossDamage": "242317085",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "10373155": {
+                        "bossDamage": "79429457",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "10374918": {
+                        "bossDamage": "22983489",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "10378295": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "12393382": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "12521640": {
+                        "bossDamage": "145402255",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "10373342": {
+                        "bossDamage": "30192798",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "12521680": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "12394201": {
+                        "bossDamage": "110368190",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "12525915": {
+                        "bossDamage": "143117060",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "12521602": {
+                        "bossDamage": "194582143",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "12318025": {
+                        "bossDamage": "143427864",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "12491146": {
+                        "bossDamage": "731156",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 1
+                    },
+                    "12527223": {
+                        "bossDamage": "162195927",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "10373122": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "10373226": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    },
+                    "10373136": {
+                        "bossDamage": "59017846",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 5
+                    },
+                    "11966775": {
+                        "bossDamage": "30651919",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 1
+                    },
+                    "11966595": {
+                        "bossDamage": "0",
+                        "nodesPoints": "650",
+                        "nodesAttemptsSpent": 9,
+                        "bossAttemptsSpent": 0
+                    }
+                }
+            }
+        }
+    ]
+}

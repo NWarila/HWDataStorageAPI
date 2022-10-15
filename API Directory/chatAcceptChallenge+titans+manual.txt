@@ -1,0 +1,239 @@
+<# Important Notes (Category: Game Loading)
+    This API is loaded when a player initiates a manaul titan guild battle. This API should be used to
+fill out the player tables. It can capture 2 different players hero information.
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665857271.499028,
+    'id':'chatChallengeEndBattle',
+    'Args': '',
+    'Request': '{"calls":[{"name":"chatAcceptChallenge","args":{"messageId":35420296,"heroes":[4032],"favor":{},"maxUpgrade":false},"ident":"body"}]}',
+    'Body': {
+        "userId": "12491146",
+        "typeId": "12491146",
+        "attackers": {
+            "4032": {
+                "id": 4032,
+                "xp": 686760,
+                "level": 120,
+                "star": 5,
+                "skills": {
+                    "4032": 120
+                },
+                "power": 103783,
+                "skins": {
+                    "10018": 60
+                },
+                "currentSkin": 0,
+                "artifacts": [
+                    {
+                        "level": 120,
+                        "star": 2
+                    },
+                    {
+                        "level": 120,
+                        "star": 2
+                    },
+                    {
+                        "level": 120,
+                        "star": 4
+                    }
+                ],
+                "scale": 0.8,
+                "type": "titan",
+                "perks": null,
+                "anticrit": 1,
+                "antidodge": 1,
+                "hp": 7276946.78,
+                "physicalAttack": 507502.49,
+                "elementAttack": 169026,
+                "elementArmor": 64786.8,
+                "elementSpiritPower": 25328,
+                "element": "dark",
+                "elementSpiritLevel": 15,
+                "elementSpiritStar": 1,
+                "skin": 0
+            }
+        },
+        "defenders": [
+            [
+                {
+                    "id": 4013,
+                    "xp": 686760,
+                    "level": 120,
+                    "star": 6,
+                    "skills": {
+                        "4016": 120,
+                        "4017": 120
+                    },
+                    "power": 170274,
+                    "skins": {
+                        "10008": 60
+                    },
+                    "currentSkin": 0,
+                    "artifacts": [
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        },
+                        {
+                            "level": 120,
+                            "star": 6
+                        }
+                    ],
+                    "scale": 0.8,
+                    "type": "titan",
+                    "perks": null,
+                    "anticrit": 1,
+                    "antidodge": 1,
+                    "hp": 6586625.11,
+                    "physicalAttack": 1165347.03,
+                    "elementAttack": 422565,
+                    "elementArmor": 89982,
+                    "elementSpiritPower": 1462500,
+                    "element": "fire",
+                    "elementSpiritLevel": 120,
+                    "elementSpiritStar": 6,
+                    "skin": 0
+                }
+            ]
+        ],
+        "effects": {
+            "battleConfig": "titan_pvp_manual"
+        },
+        "reward": [],
+        "startTime": 1665857271,
+        "seed": 2122972233,
+        "type": "challenge"
+    }
+}
+
+# Full API response
+{
+    "date": 1665857271.499028,
+    "results": [
+        {
+            "ident": "body",
+            "result": {
+                "response": {
+                    "battle": {
+                        "userId": "12491146",
+                        "typeId": "12491146",
+                        "attackers": {
+                            "4032": {
+                                "id": 4032,
+                                "xp": 686760,
+                                "level": 120,
+                                "star": 5,
+                                "skills": {
+                                    "4032": 120
+                                },
+                                "power": 103783,
+                                "skins": {
+                                    "10018": 60
+                                },
+                                "currentSkin": 0,
+                                "artifacts": [
+                                    {
+                                        "level": 120,
+                                        "star": 2
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 2
+                                    },
+                                    {
+                                        "level": 120,
+                                        "star": 4
+                                    }
+                                ],
+                                "scale": 0.8,
+                                "type": "titan",
+                                "perks": null,
+                                "anticrit": 1,
+                                "antidodge": 1,
+                                "hp": 7276946.78,
+                                "physicalAttack": 507502.49,
+                                "elementAttack": 169026,
+                                "elementArmor": 64786.8,
+                                "elementSpiritPower": 25328,
+                                "element": "dark",
+                                "elementSpiritLevel": 15,
+                                "elementSpiritStar": 1,
+                                "skin": 0
+                            }
+                        },
+                        "defenders": [
+                            [
+                                {
+                                    "id": 4013,
+                                    "xp": 686760,
+                                    "level": 120,
+                                    "star": 6,
+                                    "skills": {
+                                        "4016": 120,
+                                        "4017": 120
+                                    },
+                                    "power": 170274,
+                                    "skins": {
+                                        "10008": 60
+                                    },
+                                    "currentSkin": 0,
+                                    "artifacts": [
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        },
+                                        {
+                                            "level": 120,
+                                            "star": 6
+                                        }
+                                    ],
+                                    "scale": 0.8,
+                                    "type": "titan",
+                                    "perks": null,
+                                    "anticrit": 1,
+                                    "antidodge": 1,
+                                    "hp": 6586625.11,
+                                    "physicalAttack": 1165347.03,
+                                    "elementAttack": 422565,
+                                    "elementArmor": 89982,
+                                    "elementSpiritPower": 1462500,
+                                    "element": "fire",
+                                    "elementSpiritLevel": 120,
+                                    "elementSpiritStar": 6,
+                                    "skin": 0
+                                }
+                            ]
+                        ],
+                        "effects": {
+                            "battleConfig": "titan_pvp_manual"
+                        },
+                        "reward": [],
+                        "startTime": 1665857271,
+                        "seed": 2122972233,
+                        "type": "challenge"
+                    }
+                }
+            }
+        }
+    ]
+}

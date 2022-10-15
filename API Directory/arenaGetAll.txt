@@ -1,0 +1,374 @@
+<# Important Notes (Category: Anrea and Grand Arena)                                                              |
+    This API is loaded when a player who has the extension installed loads the game. It's in game
+    purpose is to provide the game client with the users account information. This API is the core
+    of tracking every players Arena and Grand Arena teams. This should be combined with the
+    teamGetFavor API to create a single table representing a players full defensive teams. The
+    Battles and Wins should be tracked on the player table. This is useful for tracking a players
+    Arena adn Grand arena performance.
+
+This API is Exportable: No
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1. quite a few fields are stripped out as they are not useful.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665860107.049939,
+    'id':'arenaGetAll',
+    'Args': '',
+    'Request': '{"calls": [{"name": "arenaGetAll","args": {},"ident": "arenaGetAll"}]}',
+    'Body': {
+        "arenaHeroes": [
+            {
+                "id": 46,
+                "level": 130,
+                "color": 18,
+                "star": 6
+            },
+            {
+                "id": 23,
+                "level": 130,
+                "color": 18,
+                "star": 6
+            },
+            {
+                "id": 40,
+                "level": 130,
+                "color": 18,
+                "star": 6
+            },
+            {
+                "id": 36,
+                "level": 130,
+                "color": 18,
+                "star": 6
+            },
+            {
+                "id": 50,
+                "level": 130,
+                "color": 18,
+                "star": 6
+            },
+            {
+                "id": 6006,
+                "level": 130,
+                "color": 10,
+                "star": 6,
+                "type": "pet"
+            }
+        ],
+        "grandHeroes": [
+            [
+                {
+                    "id": 16,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 40,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 9,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 23,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 29,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 6004,
+                    "level": 130,
+                    "color": 10,
+                    "star": 6,
+                    "type": "pet"
+                }
+            ],
+            [
+                {
+                    "id": 4,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 36,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 12,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 35,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 46,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 6006,
+                    "level": 130,
+                    "color": 10,
+                    "star": 6,
+                    "type": "pet"
+                }
+            ],
+            [
+                {
+                    "id": 42,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 52,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 48,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 55,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 7,
+                    "level": 130,
+                    "color": 18,
+                    "star": 6
+                },
+                {
+                    "id": 6005,
+                    "level": 130,
+                    "color": 10,
+                    "star": 6,
+                    "type": "pet"
+                }
+            ]
+        ],
+        "arenaPower": "1034448",
+        "grandPower": "2959801",
+        "battles": 5512,
+        "wins": 3184,
+    }
+}
+
+# Full API response
+{
+    "date": 1665860107.049939,
+    "results": [
+        {
+            "ident": "arenaGetAll",
+            "result": {
+                "response": {
+                    "userId": "12491146",
+                    "arenaPlace": "109",
+                    "arenaHeroes": [
+                        {
+                            "id": 46,
+                            "level": 130,
+                            "color": 18,
+                            "star": 6
+                        },
+                        {
+                            "id": 23,
+                            "level": 130,
+                            "color": 18,
+                            "star": 6
+                        },
+                        {
+                            "id": 40,
+                            "level": 130,
+                            "color": 18,
+                            "star": 6
+                        },
+                        {
+                            "id": 36,
+                            "level": 130,
+                            "color": 18,
+                            "star": 6
+                        },
+                        {
+                            "id": 50,
+                            "level": 130,
+                            "color": 18,
+                            "star": 6
+                        },
+                        {
+                            "id": 6006,
+                            "level": 130,
+                            "color": 10,
+                            "star": 6,
+                            "type": "pet"
+                        }
+                    ],
+                    "grandPlace": "20",
+                    "grandHeroes": [
+                        [
+                            {
+                                "id": 16,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 40,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 9,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 23,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 29,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 6004,
+                                "level": 130,
+                                "color": 10,
+                                "star": 6,
+                                "type": "pet"
+                            }
+                        ],
+                        [
+                            {
+                                "id": 4,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 36,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 12,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 35,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 46,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 6006,
+                                "level": 130,
+                                "color": 10,
+                                "star": 6,
+                                "type": "pet"
+                            }
+                        ],
+                        [
+                            {
+                                "id": 42,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 52,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 48,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 55,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 7,
+                                "level": 130,
+                                "color": 18,
+                                "star": 6
+                            },
+                            {
+                                "id": 6005,
+                                "level": 130,
+                                "color": 10,
+                                "star": 6,
+                                "type": "pet"
+                            }
+                        ]
+                    ],
+                    "grandCoin": 4346.263611111111,
+                    "grandCoinTime": 1665860106,
+                    "arenaPower": "1034448",
+                    "grandPower": "2959801",
+                    "rewardFlag": "0",
+                    "battles": 5512,
+                    "wins": 3184,
+                    "rewardTime": 1665878400
+                }
+            }
+        }
+    ]
+}
