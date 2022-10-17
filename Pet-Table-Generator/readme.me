@@ -1,1 +1,9 @@
+One issue that needs to be addressed when storing heroes into the player tables is that the pet patronage (favor) will modify the heroes power and certain stats. If these stats are not removed from the player it will be impossible to accurately determine if a players hero information needs to be updated.
 
+To solve this I would like to generate a table with all possible power values for every pet. Because of the multitude of variables such as level, promotion, etc it will most likely result in each pet having duplicate values, but in the event duplicate values are found we might be able to compare with other known data to determine the exact pet configuration, but that will be the following project.
+
+The python script should take 1 argument that is the lib.json (its stored as .gz on github for space reasons) and it should find all pets and generate a seperate flat file for every pet.
+
+lib.json.gz <-- This file will contain all pets and all of the items and their values.
+
+This website has taken the time/effort to figure out all the formulas and whatnot and the JSON is way trimmed so its much easier to view. It should greatly help in figuring out what all of the different parts of the formula is.
