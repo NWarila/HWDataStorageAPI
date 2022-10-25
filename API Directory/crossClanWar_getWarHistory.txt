@@ -1,4 +1,4 @@
-<# Important Notes (Category: Lootboxes)
+<# Important Notes (Category: Replay)
     This API is called when the player opens the Clash of Wars log between two
 guilds. It provides the full CoW breakdown between the two guilds including all
 of the players and their attacks. "Attack" is current guild, "Defense" is enemy

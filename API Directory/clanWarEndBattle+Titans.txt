@@ -1,0 +1,275 @@
+<# Important Notes (Category: Game Loading)
+    This API is called when a player finishes a titan attack in guild war (clanWar).
+
+What should be done with this API.
+ 1. Because titan information was collected and processed when the battle started the only thing that is needed is to record the replay
+in the replays table.
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1. An automatic method will need to be determined if the battle is heroes vs titans so it can be supplied
+    as an arg. I reccomend by checking if the first hero is between 1-1000.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665855292.896511,
+    'id':'clanWarAttack',
+    'Args': 'type:clanWarEndBattle_titan;',
+    'Request': '{"calls":[{"name":"clanWarEndBattle","args":{"result":{"win":true,"stars":1},"progress":[{"v":216,"b":0,"seed":526938894,"attackers":{"input":["auto",0,0,"cast",207,10.292999267578125,4010,"cast",207,10.292999267578125,4010,"cast",267,13.335370104569963,4011,"cast",267,13.335370104569963,4011,"auto",300,14.257370035905412],"heroes":{"4012":{"hp":787743,"energy":200,"isDead":false}}},"defenders":{"input":[],"heroes":{}}}]},"ident":"group_0_body"}]}',
+    'Body': {
+        "slotVictoryPoints": 20,
+        "fortificationVictoryPoints": 0,
+        "ourClanPoints": 1220,
+        "slot": {
+            "team": [
+                {
+                    "1": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 10466148
+                        },
+                        "id": 4003,
+                        "star": 6,
+                        "level": 120,
+                        "power": 159550,
+                        "type": "titan",
+                        "element": "water",
+                        "elementSpiritStar": 4,
+                        "elementSpiritLevel": 120
+                    },
+                    "2": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 6586625
+                        },
+                        "id": 4013,
+                        "star": 6,
+                        "level": 120,
+                        "power": 156927,
+                        "type": "titan",
+                        "element": "fire",
+                        "elementSpiritStar": 3,
+                        "elementSpiritLevel": 118
+                    },
+                    "3": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 9079494
+                        },
+                        "id": 4002,
+                        "star": 6,
+                        "level": 120,
+                        "power": 158171,
+                        "type": "titan",
+                        "element": "water",
+                        "elementSpiritStar": 4,
+                        "elementSpiritLevel": 120
+                    },
+                    "4": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 6858164
+                        },
+                        "id": 4001,
+                        "star": 6,
+                        "level": 120,
+                        "power": 158851,
+                        "type": "titan",
+                        "element": "water",
+                        "elementSpiritStar": 4,
+                        "elementSpiritLevel": 120
+                    },
+                    "5": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 11499763
+                        },
+                        "id": 4000,
+                        "star": 6,
+                        "level": 120,
+                        "power": 165250,
+                        "type": "titan",
+                        "element": "water",
+                        "elementSpiritStar": 4,
+                        "elementSpiritLevel": 120
+                    }
+                }
+            ],
+            "attackerId": 0,
+            "status": "defeated",
+            "user": {
+                "id": "12520047",
+                "name": "Alacrity",
+                "lastLoginTime": "1666058144",
+                "serverId": "5",
+                "level": "130",
+                "clanId": "69341",
+                "clanRole": "4",
+                "avatarId": "288",
+                "isChatModerator": false,
+                "frameId": 8,
+                "leagueId": 3,
+                "allowPm": "all",
+                "clanTitle": "The Uglies",
+                "clanIcon": {
+                    "flagColor1": 1,
+                    "flagColor2": 0,
+                    "flagShape": 14,
+                    "iconColor": 7,
+                    "iconShape": 43
+                }
+            },
+            "pointsFarmed": 20,
+            "slotId": "10",
+            "totalPoints": 20
+        },
+        "enemyClanPoints": 772
+    }
+}
+
+# Full API response
+{
+    "date": 1666131489.018853,
+    "results": [
+        {
+            "ident": "group_0_body",
+            "result": {
+                "response": {
+                    "slotVictoryPoints": 20,
+                    "fortificationVictoryPoints": 0,
+                    "ourClanPoints": 1220,
+                    "slot": {
+                        "team": [
+                            {
+                                "1": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 10466148
+                                    },
+                                    "id": 4003,
+                                    "star": 6,
+                                    "level": 120,
+                                    "power": 159550,
+                                    "type": "titan",
+                                    "element": "water",
+                                    "elementSpiritStar": 4,
+                                    "elementSpiritLevel": 120
+                                },
+                                "2": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 6586625
+                                    },
+                                    "id": 4013,
+                                    "star": 6,
+                                    "level": 120,
+                                    "power": 156927,
+                                    "type": "titan",
+                                    "element": "fire",
+                                    "elementSpiritStar": 3,
+                                    "elementSpiritLevel": 118
+                                },
+                                "3": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 9079494
+                                    },
+                                    "id": 4002,
+                                    "star": 6,
+                                    "level": 120,
+                                    "power": 158171,
+                                    "type": "titan",
+                                    "element": "water",
+                                    "elementSpiritStar": 4,
+                                    "elementSpiritLevel": 120
+                                },
+                                "4": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 6858164
+                                    },
+                                    "id": 4001,
+                                    "star": 6,
+                                    "level": 120,
+                                    "power": 158851,
+                                    "type": "titan",
+                                    "element": "water",
+                                    "elementSpiritStar": 4,
+                                    "elementSpiritLevel": 120
+                                },
+                                "5": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 11499763
+                                    },
+                                    "id": 4000,
+                                    "star": 6,
+                                    "level": 120,
+                                    "power": 165250,
+                                    "type": "titan",
+                                    "element": "water",
+                                    "elementSpiritStar": 4,
+                                    "elementSpiritLevel": 120
+                                }
+                            }
+                        ],
+                        "attackerId": 0,
+                        "status": "defeated",
+                        "user": {
+                            "id": "12520047",
+                            "name": "Alacrity",
+                            "lastLoginTime": "1666058144",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69341",
+                            "clanRole": "4",
+                            "avatarId": "288",
+                            "isChatModerator": false,
+                            "frameId": 8,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "clanTitle": "The Uglies",
+                            "clanIcon": {
+                                "flagColor1": 1,
+                                "flagColor2": 0,
+                                "flagShape": 14,
+                                "iconColor": 7,
+                                "iconShape": 43
+                            }
+                        },
+                        "pointsFarmed": 20,
+                        "slotId": "10",
+                        "totalPoints": 20
+                    },
+                    "enemyClanPoints": 772
+                }
+            }
+        }
+    ]
+}

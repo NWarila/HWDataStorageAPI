@@ -1,0 +1,283 @@
+<# Important Notes (Category: Game Loading)
+    This API is called when a player finishes a hero attack in guild war (clanWar).
+
+What should be done with this API.
+ 1. Because titan information was collected and processed when the battle started the only thing that is needed is to record the replay
+in the replays table.
+
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Note for extension developer
+ 1. An automatic method will need to be determined if the battle is heroes vs titans so it can be supplied
+    as an arg. I reccomend by checking if the first hero is between 1-1000.
+
+#>
+
+# Exact Response Sent to Server.
+{
+    'PlayerID': '12491146',
+    'GameID': '2308149682600244',
+    "date": 1665855292.896511,
+    'id':'clanWarEndBattle',
+    'Args': 'type:clanWarEndBattle_hero;',
+    'Request': '{"calls":[{"name":"clanWarEndBattle","args":{"result":{"win":true,"stars":2},"progress":[{"v":216,"b":0,"seed":565900137,"attackers":{"input":["auto",0,0,"auto",0,0],"heroes":{"16":{"hp":419477,"energy":403,"isDead":false},"29":{"hp":487829,"energy":117,"isDead":false},"52":{"hp":537997,"energy":508,"isDead":false},"55":{"hp":368112,"energy":881,"isDead":false},"6006":{"hp":-1,"energy":505,"isDead":false}}},"defenders":{"input":[],"heroes":{"6":{"hp":-1,"energy":438,"isDead":false}}}}]},"ident":"body"}]}',
+    'Body': {
+        "slotVictoryPoints": 20,
+        "fortificationVictoryPoints": 0,
+        "ourClanPoints": 1260,
+        "slot": {
+            "team": [
+                {
+                    "1": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 601341
+                        },
+                        "id": 46,
+                        "star": 6,
+                        "color": 18,
+                        "level": 130,
+                        "power": 135281,
+                        "type": "hero"
+                    },
+                    "2": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 303847
+                        },
+                        "id": 33,
+                        "star": 6,
+                        "color": 18,
+                        "level": 130,
+                        "power": 138103,
+                        "type": "hero"
+                    },
+                    "3": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 294988
+                        },
+                        "id": 13,
+                        "star": 6,
+                        "color": 18,
+                        "level": 130,
+                        "power": 148112,
+                        "type": "hero"
+                    },
+                    "4": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 340465
+                        },
+                        "id": 49,
+                        "star": 6,
+                        "color": 18,
+                        "level": 130,
+                        "power": 149178,
+                        "type": "hero"
+                    },
+                    "5": {
+                        "state": {
+                            "isDead": true,
+                            "hp": 0,
+                            "energy": 0,
+                            "maxHp": 1000388
+                        },
+                        "id": 24,
+                        "star": 6,
+                        "color": 18,
+                        "level": 130,
+                        "power": 161393,
+                        "type": "hero"
+                    },
+                    "6": {
+                        "state": {
+                            "hp": -1,
+                            "energy": 0,
+                            "isDead": false,
+                            "maxHp": -1
+                        },
+                        "id": 6000,
+                        "star": 6,
+                        "color": 9,
+                        "level": 130,
+                        "power": 140483,
+                        "type": "pet"
+                    }
+                }
+            ],
+            "attackerId": 0,
+            "status": "defeated",
+            "user": {
+                "id": "12529266",
+                "name": "Donk3y.kong",
+                "lastLoginTime": "1666045751",
+                "serverId": "5",
+                "level": "130",
+                "clanId": "69341",
+                "clanRole": "4",
+                "avatarId": "450",
+                "isChatModerator": false,
+                "frameId": 5,
+                "leagueId": 3,
+                "allowPm": "all",
+                "clanTitle": "The Uglies",
+                "clanIcon": {
+                    "flagColor1": 1,
+                    "flagColor2": 0,
+                    "flagShape": 14,
+                    "iconColor": 7,
+                    "iconShape": 43
+                }
+            },
+            "pointsFarmed": 20,
+            "slotId": "32",
+            "totalPoints": 20
+        },
+        "enemyClanPoints": 870
+    }
+}
+
+# Full API response
+{
+    "date": 1666132786.333963,
+    "results": [
+        {
+            "ident": "body",
+            "result": {
+                "response": {
+                    "slotVictoryPoints": 20,
+                    "fortificationVictoryPoints": 0,
+                    "ourClanPoints": 1260,
+                    "slot": {
+                        "team": [
+                            {
+                                "1": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 601341
+                                    },
+                                    "id": 46,
+                                    "star": 6,
+                                    "color": 18,
+                                    "level": 130,
+                                    "power": 135281,
+                                    "type": "hero"
+                                },
+                                "2": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 303847
+                                    },
+                                    "id": 33,
+                                    "star": 6,
+                                    "color": 18,
+                                    "level": 130,
+                                    "power": 138103,
+                                    "type": "hero"
+                                },
+                                "3": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 294988
+                                    },
+                                    "id": 13,
+                                    "star": 6,
+                                    "color": 18,
+                                    "level": 130,
+                                    "power": 148112,
+                                    "type": "hero"
+                                },
+                                "4": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 340465
+                                    },
+                                    "id": 49,
+                                    "star": 6,
+                                    "color": 18,
+                                    "level": 130,
+                                    "power": 149178,
+                                    "type": "hero"
+                                },
+                                "5": {
+                                    "state": {
+                                        "isDead": true,
+                                        "hp": 0,
+                                        "energy": 0,
+                                        "maxHp": 1000388
+                                    },
+                                    "id": 24,
+                                    "star": 6,
+                                    "color": 18,
+                                    "level": 130,
+                                    "power": 161393,
+                                    "type": "hero"
+                                },
+                                "6": {
+                                    "state": {
+                                        "hp": -1,
+                                        "energy": 0,
+                                        "isDead": false,
+                                        "maxHp": -1
+                                    },
+                                    "id": 6000,
+                                    "star": 6,
+                                    "color": 9,
+                                    "level": 130,
+                                    "power": 140483,
+                                    "type": "pet"
+                                }
+                            }
+                        ],
+                        "attackerId": 0,
+                        "status": "defeated",
+                        "user": {
+                            "id": "12529266",
+                            "name": "Donk3y.kong",
+                            "lastLoginTime": "1666045751",
+                            "serverId": "5",
+                            "level": "130",
+                            "clanId": "69341",
+                            "clanRole": "4",
+                            "avatarId": "450",
+                            "isChatModerator": false,
+                            "frameId": 5,
+                            "leagueId": 3,
+                            "allowPm": "all",
+                            "clanTitle": "The Uglies",
+                            "clanIcon": {
+                                "flagColor1": 1,
+                                "flagColor2": 0,
+                                "flagShape": 14,
+                                "iconColor": 7,
+                                "iconShape": 43
+                            }
+                        },
+                        "pointsFarmed": 20,
+                        "slotId": "32",
+                        "totalPoints": 20
+                    },
+                    "enemyClanPoints": 870
+                }
+            }
+        }
+    ]
+}

@@ -1,9 +1,5 @@
 <# Important Notes (Category: Replays)                                                                           |
-    This API is called when a player opens their Grand Arena battle logs. This API query should place data
-in the replay and players table. This information should also fill in a seperate set of fields in the player
-database allowing the extension to track the latest Grand Arena team used by the defending player for
-future reference. We will want our extension to be able to query what is the current 3 Grand Arena defense
-team being used by a current player so it should be a constantly updating data value
+    This API is called when a player opens their Grand Arena battle logs. This 
 
     ! Note: Because Arena and Grand Arena attacks always use a players current heroes, the player table
     !       only needs to point to the players own heroes and will only need to keep track of the team
