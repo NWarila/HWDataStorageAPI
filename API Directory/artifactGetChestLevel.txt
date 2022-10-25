@@ -1,8 +1,9 @@
 <# Important Notes (Category: Replays)                                                                           |
-    This API is loaded when a player who has the extension installed loads the game. It's in game
-    purpose is to provide the game client with the users account information. This API tracks a users
-    artifact chest progress. No history information is needed for this so its should always just update
-    to whatever is the latest and greatest value is.
+    This API is loaded when a player who has the extension installed loads the game. It's in game purpose is to
+populate the players client with their curent artifact chest progress.
+
+    1. This information should be tracked on a per-player basis. It should should also track the date in which
+    the data was udpated. This will provide useful information to determine how out of date the information is.
 
 This API is Exportable: No
 

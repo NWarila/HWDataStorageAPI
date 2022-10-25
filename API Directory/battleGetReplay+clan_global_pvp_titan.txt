@@ -1,15 +1,12 @@
 <# Important Notes (Category: Replays)                                                                           |
     This API is called when a player loads a replay from the Clash of Wars log. This API stores all the
-information to have the game client accurately load a battle replay. Collecting this API should do two things:
+information to have the game client accurately load a battle replay.
 
  1. The replay in its entirety should be stored in the database so that the exact relay can be loaded or exported
-    as needed.
+as needed.
 
  2. The hero, titan, totem, and pet information should be updated as neededfor the relevant players as needed
- in the players tables. The server should calculate the pet stats that are added to the heroes and remove them
- before storing the information in the player table.
-
- !The formula to calculate the pet infomration needs to be provided to python developer.
+in the players tables.
 
 This API is Exportable: Yes
 

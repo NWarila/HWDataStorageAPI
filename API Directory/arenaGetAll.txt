@@ -1,10 +1,20 @@
 <# Important Notes (Category: Anrea and Grand Arena)                                                              |
-    This API is loaded when a player who has the extension installed loads the game. It's in game
-    purpose is to provide the game client with the users account information. This API is the core
-    of tracking every players Arena and Grand Arena teams. This should be combined with the
-    teamGetFavor API to create a single table representing a players full defensive teams. The
-    Battles and Wins should be tracked on the player table. This is useful for tracking a players
-    Arena adn Grand arena performance.
+    This API is loaded when a player who has the extension installed loads the game. It's in game purpose is to
+populate the client with the users currently set Arena and Grand Arena heroes. This should be combined with the
+teamGetFavor API to create a single table represneting a users full defenseive teams in the both areas.
+
+    1. Use the arenaHeroes and grandHeroes fields to update the player Table with the the team compositions of
+    the player. The arena is made up of 1-5 heroes and 0-1 team pets. Each of the heroes can be patronaged with
+    a pet. Only the IDs need to be tracked because the heroes will always use the players current power so
+    we do not need to track the arenaPower and grandPower fields as those can be calculated as needed.
+
+    2. Use the Battles and Wins fields to update the Player table with the values. This will be useful for tracking
+    how successful a player in in the Arena and Grand Arena.
+
+    ! Note: Because Arena and Grand Arena attacks always use a players current heroes, the player table
+    !       only needs to point to the players own heroes and will only need to keep track of the team
+    !       composition and patronages. From this we will want to build a module that can be used to
+    !       query a team to sim against.
 
 This API is Exportable: No
 
@@ -183,8 +193,6 @@ Note for extension developer
                 }
             ]
         ],
-        "arenaPower": "1034448",
-        "grandPower": "2959801",
         "battles": 5512,
         "wins": 3184,
     }

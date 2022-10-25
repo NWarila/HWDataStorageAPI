@@ -1,9 +1,13 @@
 <# Important Notes (Category: Replays)                                                                           |
-    This API is called when a player opens their Arena battle logs. This API query should place data
-in the replay and players table. This information should also fill in a seperate set of fields in the player
-database allowing the extension to track the latest Grand Arena team used by the defending player for
-future reference. We will want our extension to be able to query what is the current Arena defense
-team being used by a current player so it should be a constantly updating data value
+    This API is called when a player opens their Arena battle logs. The purpose of this API is to update the
+players game client with their Arena battle history. This API request is particularly useful because it will be
+an excellent source of battles.
+
+    1. The users node should be processed to update the player table entries ensuring all information is updated.
+
+    2. Replays should be stored in the replays table.
+
+    3. All players heroes and pet information should be updated from the data gained from the replays.
 
     ! Note: Because Arena and Grand Arena attacks always use a players current heroes, the player table
     !       only needs to point to the players own heroes and will only need to keep track of the team
@@ -17,7 +21,12 @@ Long Term goals (Out of Scope of this project)
 defense rates. This information will go a long way in allowing players to optimize their arena defenses.
 
 Note for extension developer
- 1. None
+ 1. The default amount of replays is 20, but the limit is 30, we should intercept the outgoing request and change
+    it from 20 to 30 to maximize the amount of logs collected.
+
+Misc Notes:
+    While The logs might even go farther back but mine was only showing up to 30. It request errors out once you hit
+50 though, so I might not have enough hits recently enough. More testing is required.
 
 #>
 
