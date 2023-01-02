@@ -1,13 +1,52 @@
-<# Important Notes (Category: Game Loading)
-    This API is loaded when a player who has the extension installed loads the
-    game. It's in game purpose is to provide the game client with the users titan
-    information and we are using it for the same purpose. When the server receives
-    this API it should be used to update the players (PlayerID) character stats.
+<# Important Notes
+    This API loads all of the current players titan information in the game client.
+    
+When is this API called?
+    This API is called during the initial loading sequence.
+    
+Associated Database Table(s): 
+    accounts_titans
+    accounts_skins
+    accounts_skills
+    accounts_artifacts
+    
+Long Term goals (Out of Scope of this project)
+    N/A
+
+Notes:
+    N/A
+
+Note for extension developer
+    N/A
 
 Long Term goals (Out of Scope of this project)
     Eventually this information will be used to present a per-player view of a
     players heroes, titans, totems, and pets. It will essentially be a read-only
     version of this website. URL: https://hero-wars.ji7.ru/heroes
+   
+   
+Expected Values
+    id: 4000-4003, 4010-4013, 4020-4023, 4030-4033, 040-4043
+    xp: 0-686760(?)
+    level: 1-120,
+    star: 6,
+    skills: { # There are between 1-4 skills for every titan/hero)
+        "4003": 120
+    },
+    power: 0-170314,
+    "skins": { # There are between 1-6 skins for every titan/hero)
+        "10002": 60
+    },
+    currentSkin": 0,
+    artifacts: [ # There are 3 artifacts for every titan/hero)
+        {
+            level: -0-120
+            star: 0-6
+        },
+    ],
+    scale: 0.8,
+    type: titan,
+    perks: null
 #>
 
 # Exact Response Sent to Server.
