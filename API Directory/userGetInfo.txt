@@ -1,12 +1,18 @@
-<# Important Notes (Category: Replays)                                                                           |
-    This API is loaded when a player who has the extension installed loads the game. It's in game
-    purpose is to provide the game client with the users account information. This API will make up
-    the core of the player table.
-
-This API is Exportable: No
+<# Important Notes                                                                          |
+    This API provides the game client with the accounts information.
+    
+When is this API called?
+    This API is called during the game loading sequence.
+    
+Associated Database Table(s): 
+    accounts
+    accounts_nameHistory
 
 Long Term goals (Out of Scope of this project)
     N/A
+
+Notes:
+    
 
 Note for extension developer
  1. This API is one of the only APIs where alot of information is removed from the extension. I feel alot
