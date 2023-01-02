@@ -4,13 +4,20 @@
     titan artifact chest progress. No history information is needed for this so its should always just
     update to whatever is the latest and greatest value is.
 
-This API is Exportable: No
-
+When is this API called?
+    This API is called during the initial loading sequence.
+    
+Associated Database Table(s): 
+    accounts
+    
 Long Term goals (Out of Scope of this project)
     N/A
 
+Notes:
+    N/A
+
 Note for extension developer
- 1.
+    N/A
 
 #>
 
